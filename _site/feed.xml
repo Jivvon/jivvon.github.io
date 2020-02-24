@@ -1,14 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-02-24T20:26:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
-</subtitle><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><entry><title type="html">Welcome</title><link href="http://localhost:4000/2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+09:00</published><updated>2018-07-01T00:00:00+09:00</updated><id>http://localhost:4000/2018/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2018/07/01/welcome.html">&lt;p&gt;If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-02-25T00:55:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
+</subtitle><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><entry><title type="html">codepen timetable</title><link href="http://localhost:4000/2020/02/24/codepen-timetable.html" rel="alternate" type="text/html" title="codepen timetable" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/codepen-timetable</id><content type="html" xml:base="http://localhost:4000/2020/02/24/codepen-timetable.html">&lt;div&gt;&lt;div class=&quot;extensions extensions--demo&quot;&gt;
+&lt;iframe src=&quot;//codepen.io/markmurray/embed/wImHf/?theme-id=0&amp;amp;default-tab=html,result&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="시간표" /><category term="타임테이블" /><category term="timetable" /><summary type="html"></summary></entry><entry><title type="html">vi 단축키</title><link href="http://localhost:4000/2020/02/24/vim-cheet.html" rel="alternate" type="text/html" title="vi 단축키" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/vim-cheet</id><content type="html" xml:base="http://localhost:4000/2020/02/24/vim-cheet.html">&lt;h1 id=&quot;vim-cheat-sheet&quot;&gt;&lt;a href=&quot;https://vim.rtorr.com/&quot;&gt;Vim Cheat Sheet&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;You may want to &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration&quot;&gt;config the site&lt;/a&gt; or &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/docs/en/writing-posts&quot;&gt;writing a post&lt;/a&gt; next. Please feel free to &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/issues&quot;&gt;create an issue&lt;/a&gt; or &lt;a href=&quot;mailto:kitian616@outlook.com&quot;&gt;send me email&lt;/a&gt; if you have any questions.&lt;/p&gt;
+&lt;h2 id=&quot;전역&quot;&gt;전역&lt;/h2&gt;
 
-&lt;!--more--&gt;
+&lt;ul&gt;
+  &lt;li&gt;:help keyword - keyword에 대한 도움말 열기&lt;/li&gt;
+  &lt;li&gt;:saveas file - file로 저장하기&lt;/li&gt;
+  &lt;li&gt;:close - 현재 영역 닫기&lt;/li&gt;
+  &lt;li&gt;K - 커서가 위치한 단어에 대한 맨페이지 열기&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&quot;커서-이동&quot;&gt;커서 이동&lt;/h2&gt;
 
-&lt;p&gt;If you like TeXt, don’t forget to give me a star. :star2:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;h - 왼쪽으로 이동&lt;/li&gt;
+  &lt;li&gt;j - 아래로 이동&lt;/li&gt;
+  &lt;li&gt;k - 위로 이동&lt;/li&gt;
+  &lt;li&gt;l - 오른쪽으로 이동&lt;/li&gt;
+  &lt;li&gt;H - 화면 상단으로 이동&lt;/li&gt;
+  &lt;li&gt;M - 화면 중간으로 이동&lt;/li&gt;
+  &lt;li&gt;L - 화면 하단으로 이동&lt;/li&gt;
+  &lt;li&gt;w - 다음 단어 시작으로 점프&lt;/li&gt;
+  &lt;li&gt;W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)&lt;/li&gt;
+  &lt;li&gt;e - 다음 단어 끝으로 점프&lt;/li&gt;
+  &lt;li&gt;E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)&lt;/li&gt;
+  &lt;li&gt;b - 이전 단어 시작으로 점프&lt;/li&gt;
+  &lt;li&gt;B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)&lt;/li&gt;
+  &lt;li&gt;% - 현재 괄호와 맞는 짝의 괄호로 이동 (&lt;code&gt;:h matchpairs&lt;/code&gt;를 통해 더 많은 정보를 얻을 수 있다.)&lt;/li&gt;
+  &lt;li&gt;0 - 행의 처음으로 점프&lt;/li&gt;
+  &lt;li&gt;^ - 행의 시작 문자로 점프&lt;/li&gt;
+  &lt;li&gt;$ - 행의 끝으로 점프&lt;/li&gt;
+  &lt;li&gt;g_ - 행의 끝 문자로 점프&lt;/li&gt;
+  &lt;li&gt;gg - 문서 첫 행으로 점프&lt;/li&gt;
+  &lt;li&gt;G - 문서 마지막 행으로 점프&lt;/li&gt;
+  &lt;li&gt;5G - 5번째 행으로 점프&lt;/li&gt;
+  &lt;li&gt;fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동&lt;/li&gt;
+  &lt;li&gt;tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동&lt;/li&gt;
+  &lt;li&gt;Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동&lt;/li&gt;
+  &lt;li&gt;Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동&lt;/li&gt;
+  &lt;li&gt;; - 가장 최근의 f, t, F나 T 명령을 다시 실행&lt;/li&gt;
+  &lt;li&gt;, - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행&lt;/li&gt;
+  &lt;li&gt;} - 다음 단락(또는 함수/블록)으로 이동&lt;/li&gt;
+  &lt;li&gt;{ - 이전 단락(또는 함수/블록)으로 이동&lt;/li&gt;
+  &lt;li&gt;zz - 커서가 있는 행을 중간으로 하도록 화면 이동&lt;/li&gt;
+  &lt;li&gt;Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동&lt;/li&gt;
+  &lt;li&gt;Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동&lt;/li&gt;
+  &lt;li&gt;Ctrl + b - 한 화면 위로&lt;/li&gt;
+  &lt;li&gt;Ctrl + f - 한 화면 아래로&lt;/li&gt;
+  &lt;li&gt;Ctrl + d - 반 화면 아래로&lt;/li&gt;
+  &lt;li&gt;Ctrl + u - 반 화면 위로&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/kitian616/jekyll-TeXt-theme.svg?label=Stars&amp;amp;style=social&quot; alt=&quot;Star This Project&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="TeXt" /><summary type="html">If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost: You may want to config the site or writing a post next. Please feel free to create an issue or send me email if you have any questions.</summary></entry><entry><title type="html">Post with Header Image</title><link href="http://localhost:4000/2018/06/01/header-image.html" rel="alternate" type="text/html" title="Post with Header Image" /><published>2018-06-01T00:00:00+09:00</published><updated>2018-06-01T00:00:00+09:00</updated><id>http://localhost:4000/2018/06/01/header-image</id><content type="html" xml:base="http://localhost:4000/2018/06/01/header-image.html">&lt;p&gt;A Post with Header Image, See &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/samples.html#page-layout&quot;&gt;Page layout&lt;/a&gt; for more examples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동.&lt;/p&gt;
 
-&lt;!--more--&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="TeXt" /><summary type="html">A Post with Header Image, See Page layout for more examples.</summary></entry></feed>
+&lt;h2 id=&quot;삽입-모드---택스트-삽입추가&quot;&gt;삽입 모드 - 택스트 삽입/추가&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;i - 커서 앞에 삽입&lt;/li&gt;
+  &lt;li&gt;I - 행 시작에 삽입&lt;/li&gt;
+  &lt;li&gt;a - 커서 뒤에 추가&lt;/li&gt;
+  &lt;li&gt;A - 행 끝에 추가&lt;/li&gt;
+  &lt;li&gt;o - 현재 행 아래에 새 행 추가&lt;/li&gt;
+  &lt;li&gt;O - 현재 행 위에 새 행 추가&lt;/li&gt;
+  &lt;li&gt;ea - 단어 끝에 추가&lt;/li&gt;
+  &lt;li&gt;Esc - 삽입 모드 종료&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;편집&quot;&gt;편집&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;r - 한 글자 바꾸기&lt;/li&gt;
+  &lt;li&gt;J - 현재 행과 다음 행을 연결&lt;/li&gt;
+  &lt;li&gt;gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결&lt;/li&gt;
+  &lt;li&gt;gwip - 단락을 리플로우&lt;/li&gt;
+  &lt;li&gt;cc - 행 전체를 새로 쓰기&lt;/li&gt;
+  &lt;li&gt;C - 행 끝까지를 새로 쓰기&lt;/li&gt;
+  &lt;li&gt;c$ - 행 끝까지를 새로 쓰기&lt;/li&gt;
+  &lt;li&gt;ciw - 단어 전체를 새로 쓰기&lt;/li&gt;
+  &lt;li&gt;cw - 단어 끝까지를 새로 쓰기&lt;/li&gt;
+  &lt;li&gt;s - 한 글자 삭제하고 삽입 모드 시작&lt;/li&gt;
+  &lt;li&gt;S - 행 삭제하고 텍스트 입력 (&lt;kbd&gt;cc&lt;/kbd&gt;와 동일)&lt;/li&gt;
+  &lt;li&gt;xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합)&lt;/li&gt;
+  &lt;li&gt;u - 실행 취소&lt;/li&gt;
+  &lt;li&gt;Ctrl + r - 다시 실행&lt;/li&gt;
+  &lt;li&gt;. - 마지막 명령 반복&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;텍스트-선택-비주얼-모드&quot;&gt;텍스트 선택 (비주얼 모드)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사)&lt;/li&gt;
+  &lt;li&gt;V - 행 단위 선택 모드 시작&lt;/li&gt;
+  &lt;li&gt;o - 선택 영역의 반대쪽 끝으로 이동&lt;/li&gt;
+  &lt;li&gt;Ctrl + v - 블록 선택 모드 시작&lt;/li&gt;
+  &lt;li&gt;O - 블록의 반대쪽 모서리로 이동&lt;/li&gt;
+  &lt;li&gt;aw - 단어 선택&lt;/li&gt;
+  &lt;li&gt;ab - () 블럭 선택&lt;/li&gt;
+  &lt;li&gt;aB - {} 블럭 선택&lt;/li&gt;
+  &lt;li&gt;ib - () 블럭의 내부 선택&lt;/li&gt;
+  &lt;li&gt;iB - {} 블럭의 내부 선택&lt;/li&gt;
+  &lt;li&gt;Esc - 선택 모드 종료&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;선택-모드-명령&quot;&gt;선택 모드 명령&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&amp;gt; - 텍스트를 오른쪽으로 이동&lt;/li&gt;
+  &lt;li&gt;&amp;lt; - 텍스트를 왼쪽으로 이동&lt;/li&gt;
+  &lt;li&gt;y - 선택한 텍스트 복사&lt;/li&gt;
+  &lt;li&gt;d - 선택한 텍스트 삭제&lt;/li&gt;
+  &lt;li&gt;~ - 대소문자 반전&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;레지스터&quot;&gt;레지스터&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:reg - 레지스터 내용물 표시&lt;/li&gt;
+  &lt;li&gt;“xy - 레지스터 x로 복사&lt;/li&gt;
+  &lt;li&gt;“xp - 레지스터 x의 내용물 붙어넣기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음.&lt;/p&gt;
+
+&lt;h2 id=&quot;표시&quot;&gt;표시&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:marks - 표시 항목 표시&lt;/li&gt;
+  &lt;li&gt;ma - 현재 위치를 표시 a로 설정&lt;/li&gt;
+  &lt;li&gt;`a - 표시 a의 위치로 점프&lt;/li&gt;
+  &lt;li&gt;y`a - 표시 a의 위치까지 복사&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;매크로&quot;&gt;매크로&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;qa - 매크로 a 기록 시작&lt;/li&gt;
+  &lt;li&gt;q - 매크로 기록 중지&lt;/li&gt;
+  &lt;li&gt;@a - 매크로 a 실행&lt;/li&gt;
+  &lt;li&gt;@@ - 마지막 실행한 매크로 재실행&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;잘라내기와-붙여넣기&quot;&gt;잘라내기와 붙여넣기&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;yy - 행 복사&lt;/li&gt;
+  &lt;li&gt;2yy - 2줄 복사&lt;/li&gt;
+  &lt;li&gt;yw - 커서 위치에서 다음 단어 시작까지 복사&lt;/li&gt;
+  &lt;li&gt;y$ - 행 끝까지 복사&lt;/li&gt;
+  &lt;li&gt;p - 커서 위치 뒤에 붙여넣기&lt;/li&gt;
+  &lt;li&gt;P - 커서 위치 앞에 붙여넣기&lt;/li&gt;
+  &lt;li&gt;dd - 행 잘라내기&lt;/li&gt;
+  &lt;li&gt;2dd - 2줄 잘라내기&lt;/li&gt;
+  &lt;li&gt;dw - 커서 위치에서 다음 단어 시작까지 잘라내기&lt;/li&gt;
+  &lt;li&gt;D - 행 끝까지 잘라내기&lt;/li&gt;
+  &lt;li&gt;d$ - 행 끝까지 잘라내기&lt;/li&gt;
+  &lt;li&gt;x - 한 글자 잘라내기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;나가기&quot;&gt;나가기&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:w - 저장하고, 나가지는 않기&lt;/li&gt;
+  &lt;li&gt;:w !sudo tee % - sudo로 현재 파일 저장&lt;/li&gt;
+  &lt;li&gt;:wq or :x or ZZ - 저장하고 나가기&lt;/li&gt;
+  &lt;li&gt;:q - 나가기 (저장하지 않은 변경 사항 있으면 실패)&lt;/li&gt;
+  &lt;li&gt;:q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림)&lt;/li&gt;
+  &lt;li&gt;:wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;찾기와-바꾸기&quot;&gt;찾기와 바꾸기&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/pattern - 패턴 찾기&lt;/li&gt;
+  &lt;li&gt;?pattern - 패턴 역방향 찾기&lt;/li&gt;
+  &lt;li&gt;\vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요)&lt;/li&gt;
+  &lt;li&gt;n - 같은 방향으로 찾기 반복&lt;/li&gt;
+  &lt;li&gt;N - 반대 방향으로 찾기 반복&lt;/li&gt;
+  &lt;li&gt;:%s/old/new/g - 파일 내 모든 old를 new로 바꾸기&lt;/li&gt;
+  &lt;li&gt;:%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기&lt;/li&gt;
+  &lt;li&gt;:noh - 찾기 강조 표시 없애기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;여러-파일에서-찾기&quot;&gt;여러 파일에서 찾기&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;e.g.:vimgrep /foo/ &lt;em&gt;*/&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:cn - 다음 일치 항목으로 점프&lt;/li&gt;
+  &lt;li&gt;:cp - 이전 일치 항목으로 점프&lt;/li&gt;
+  &lt;li&gt;:copen - 일치 목록을 새 창으로 열기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;여러-파일-작업&quot;&gt;여러 파일 작업&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:e file - 새 버퍼에서 파일 편집&lt;/li&gt;
+  &lt;li&gt;:bnext or :bn - 다음 버퍼로 이동&lt;/li&gt;
+  &lt;li&gt;:bprev or :bp - 이전 버퍼로 이동&lt;/li&gt;
+  &lt;li&gt;:bd - 버퍼 삭제 (파일 닫기)&lt;/li&gt;
+  &lt;li&gt;:ls - 열린 버퍼 모두 나열&lt;/li&gt;
+  &lt;li&gt;:sp file - 새 버퍼에 파일 열고 상하로 창 분할&lt;/li&gt;
+  &lt;li&gt;:vsp file - 새 버퍼에 파일 열고 좌우로 창 분할&lt;/li&gt;
+  &lt;li&gt;Ctrl + ws - 상하로 창 분할&lt;/li&gt;
+  &lt;li&gt;Ctrl + ww - 창 전환&lt;/li&gt;
+  &lt;li&gt;Ctrl + wq - 창 닫기&lt;/li&gt;
+  &lt;li&gt;Ctrl + wv - 좌우로 창 분할&lt;/li&gt;
+  &lt;li&gt;Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할)&lt;/li&gt;
+  &lt;li&gt;Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할)&lt;/li&gt;
+  &lt;li&gt;Ctrl + wj - 아래 창으로 이동 (상하 분할)&lt;/li&gt;
+  &lt;li&gt;Ctrl + wk - 위 창으로 이동 (상하 분할)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;탭&quot;&gt;탭&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:tabnew or :tabnew file - 새 탭에서 파일 열기&lt;/li&gt;
+  &lt;li&gt;Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동&lt;/li&gt;
+  &lt;li&gt;gt or :tabnext or :tabn - 다음 탭으로 이동&lt;/li&gt;
+  &lt;li&gt;gT or :tabprev or :tabp - 이전 탭으로 이동&lt;/li&gt;
+  &lt;li&gt;#gt - #번 탭으로 이동&lt;/li&gt;
+  &lt;li&gt;:tabmove # - 현재 탭을 #번째로 이동 (0부터 시작)&lt;/li&gt;
+  &lt;li&gt;:tabclose or :tabc - 현재 탭과 그 안의 창들 닫기&lt;/li&gt;
+  &lt;li&gt;:tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기&lt;/li&gt;
+  &lt;li&gt;:tabdo command - 모든 탭에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; 실행하기 (예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;:tabdo q&lt;/code&gt; - 열린 모든 탭 닫기)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="vi" /><category term="vim" /><category term="vi_cheet" /><category term="vim_cheet" /><category term="cheet" /><summary type="html">Vim Cheat Sheet 전역 :help keyword - keyword에 대한 도움말 열기 :saveas file - file로 저장하기 :close - 현재 영역 닫기 K - 커서가 위치한 단어에 대한 맨페이지 열기 커서 이동 h - 왼쪽으로 이동 j - 아래로 이동 k - 위로 이동 l - 오른쪽으로 이동 H - 화면 상단으로 이동 M - 화면 중간으로 이동 L - 화면 하단으로 이동 w - 다음 단어 시작으로 점프 W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) e - 다음 단어 끝으로 점프 E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) b - 이전 단어 시작으로 점프 B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) % - 현재 괄호와 맞는 짝의 괄호로 이동 (:h matchpairs를 통해 더 많은 정보를 얻을 수 있다.) 0 - 행의 처음으로 점프 ^ - 행의 시작 문자로 점프 $ - 행의 끝으로 점프 g_ - 행의 끝 문자로 점프 gg - 문서 첫 행으로 점프 G - 문서 마지막 행으로 점프 5G - 5번째 행으로 점프 fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동 tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동 Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동 Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동 ; - 가장 최근의 f, t, F나 T 명령을 다시 실행 , - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행 } - 다음 단락(또는 함수/블록)으로 이동 { - 이전 단락(또는 함수/블록)으로 이동 zz - 커서가 있는 행을 중간으로 하도록 화면 이동 Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동 Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동 Ctrl + b - 한 화면 위로 Ctrl + f - 한 화면 아래로 Ctrl + d - 반 화면 아래로 Ctrl + u - 반 화면 위로 Tip 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동. 삽입 모드 - 택스트 삽입/추가 i - 커서 앞에 삽입 I - 행 시작에 삽입 a - 커서 뒤에 추가 A - 행 끝에 추가 o - 현재 행 아래에 새 행 추가 O - 현재 행 위에 새 행 추가 ea - 단어 끝에 추가 Esc - 삽입 모드 종료 편집 r - 한 글자 바꾸기 J - 현재 행과 다음 행을 연결 gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결 gwip - 단락을 리플로우 cc - 행 전체를 새로 쓰기 C - 행 끝까지를 새로 쓰기 c$ - 행 끝까지를 새로 쓰기 ciw - 단어 전체를 새로 쓰기 cw - 단어 끝까지를 새로 쓰기 s - 한 글자 삭제하고 삽입 모드 시작 S - 행 삭제하고 텍스트 입력 (cc와 동일) xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합) u - 실행 취소 Ctrl + r - 다시 실행 . - 마지막 명령 반복 텍스트 선택 (비주얼 모드) v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사) V - 행 단위 선택 모드 시작 o - 선택 영역의 반대쪽 끝으로 이동 Ctrl + v - 블록 선택 모드 시작 O - 블록의 반대쪽 모서리로 이동 aw - 단어 선택 ab - () 블럭 선택 aB - {} 블럭 선택 ib - () 블럭의 내부 선택 iB - {} 블럭의 내부 선택 Esc - 선택 모드 종료 선택 모드 명령 &amp;gt; - 텍스트를 오른쪽으로 이동 &amp;lt; - 텍스트를 왼쪽으로 이동 y - 선택한 텍스트 복사 d - 선택한 텍스트 삭제 ~ - 대소문자 반전 레지스터 :reg - 레지스터 내용물 표시 “xy - 레지스터 x로 복사 “xp - 레지스터 x의 내용물 붙어넣기 Tip 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임. Tip 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음. 표시 :marks - 표시 항목 표시 ma - 현재 위치를 표시 a로 설정 `a - 표시 a의 위치로 점프 y`a - 표시 a의 위치까지 복사 매크로 qa - 매크로 a 기록 시작 q - 매크로 기록 중지 @a - 매크로 a 실행 @@ - 마지막 실행한 매크로 재실행 잘라내기와 붙여넣기 yy - 행 복사 2yy - 2줄 복사 yw - 커서 위치에서 다음 단어 시작까지 복사 y$ - 행 끝까지 복사 p - 커서 위치 뒤에 붙여넣기 P - 커서 위치 앞에 붙여넣기 dd - 행 잘라내기 2dd - 2줄 잘라내기 dw - 커서 위치에서 다음 단어 시작까지 잘라내기 D - 행 끝까지 잘라내기 d$ - 행 끝까지 잘라내기 x - 한 글자 잘라내기 나가기 :w - 저장하고, 나가지는 않기 :w !sudo tee % - sudo로 현재 파일 저장 :wq or :x or ZZ - 저장하고 나가기 :q - 나가기 (저장하지 않은 변경 사항 있으면 실패) :q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림) :wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기 찾기와 바꾸기 /pattern - 패턴 찾기 ?pattern - 패턴 역방향 찾기 \vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요) n - 같은 방향으로 찾기 반복 N - 반대 방향으로 찾기 반복 :%s/old/new/g - 파일 내 모든 old를 new로 바꾸기 :%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기 :noh - 찾기 강조 표시 없애기 여러 파일에서 찾기 :vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기 e.g.:vimgrep /foo/ */ :cn - 다음 일치 항목으로 점프 :cp - 이전 일치 항목으로 점프 :copen - 일치 목록을 새 창으로 열기 여러 파일 작업 :e file - 새 버퍼에서 파일 편집 :bnext or :bn - 다음 버퍼로 이동 :bprev or :bp - 이전 버퍼로 이동 :bd - 버퍼 삭제 (파일 닫기) :ls - 열린 버퍼 모두 나열 :sp file - 새 버퍼에 파일 열고 상하로 창 분할 :vsp file - 새 버퍼에 파일 열고 좌우로 창 분할 Ctrl + ws - 상하로 창 분할 Ctrl + ww - 창 전환 Ctrl + wq - 창 닫기 Ctrl + wv - 좌우로 창 분할 Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할) Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할) Ctrl + wj - 아래 창으로 이동 (상하 분할) Ctrl + wk - 위 창으로 이동 (상하 분할) 탭 :tabnew or :tabnew file - 새 탭에서 파일 열기 Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동 gt or :tabnext or :tabn - 다음 탭으로 이동 gT or :tabprev or :tabp - 이전 탭으로 이동 #gt - #번 탭으로 이동 :tabmove # - 현재 탭을 #번째로 이동 (0부터 시작) :tabclose or :tabc - 현재 탭과 그 안의 창들 닫기 :tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기 :tabdo command - 모든 탭에서 command 실행하기 (예를 들어, :tabdo q - 열린 모든 탭 닫기)</summary></entry></feed>
