@@ -1,16 +1,17 @@
-I"*<h1 id="ji-won-jeong">JI WON JEONG</h1>
+I"�
+<!-- # JI WON JEONG -->
 
-<p>Yuseong-gu,Daejeon,Korea
-poiu8944@cnu.ac.kr
-+82-10-6850-
-jivvon.github.io
-github.com/Jivvon</p>
+<ul>
+  <li>address : Yuseong-gu,Daejeon,Korea</li>
+  <li>e-mail : poiu8944@gmail.com</li>
+  <li>phone : +82-10-6850-0658</li>
+</ul>
 
-<h3 id="objective"><strong>OBJECTIVE</strong></h3>
+<!-- ### **OBJECTIVE**
 
-<p>Passionate and hard-working university student who has high-level technique and experiences is
-looking for the internship. Ability to do teamwork and multi-task will support ( ) in achieving
-the goal.</p>
+Passionate and hard-working university student who has high-level technique and experiences is
+looking for the internship. Ability to do teamwork and multi-task will support (company) in achieving
+the goal. -->
 
 <h3 id="education"><strong>EDUCATION</strong></h3>
 
@@ -37,20 +38,20 @@ the goal.</p>
 
 <h3 id="projects"><strong>PROJECTS</strong></h3>
 
-<p><strong><a href="github.com/Jivvon/cnu-macro">CNU-MACRO</a></strong> - github.com/Jivvon/cnu-macro <strong><code class="highlighter-rouge">2020.02</code></strong></p>
+<p><strong><a href="http://github.com/Jivvon/cnu-macro">CNU-MACRO</a> <code class="highlighter-rouge">2020.02</code></strong></p>
 
 <ul>
   <li>Automate register for courses only Chungnam National University’s</li>
   <li>Recognition numbers with Python OCR library</li>
 </ul>
 
-<p><strong><a href="github.com/Jivvon/2019_2_OOP/tree/master/termproject">PUYOPUYO</a></strong> - github.com/Jivvon/2019_2_OOP/tree/master/termproject <strong><code class="highlighter-rouge">2019.12</code></strong></p>
+<p><strong><a href="http://github.com/Jivvon/2019_2_OOP/tree/master/termproject">PUYOPUYO</a> <code class="highlighter-rouge">2019.12</code></strong></p>
 <ul>
   <li>Available to play the game on the console.</li>
   <li>Project application made by C++ only for ‘Object Oriented Design’ course.</li>
 </ul>
 
-<p><strong><a href="github.com/Jivvon/2019_EPIS_Tufu4">VOWOW</a></strong> - github.com/Jivvon/2019_EPIS_Tufu4 <strong><code class="highlighter-rouge">2019.06 - 2019.12</code></strong></p>
+<p><strong><a href="http://github.com/Jivvon/2019_EPIS_Tufu4">VOWOW</a> <code class="highlighter-rouge">2019.06 - 2019.12</code></strong></p>
 
 <ul>
   <li>Android Application for Startup Competition ( <strong>The President of Korea Racing Authority award</strong> )</li>
