@@ -26,7 +26,7 @@ layout: article
 key: page-about
 ---
 
-<!-- # JI WON JEONG -->
+# JI WON JEONG
 
 - address : Yuseong-gu,Daejeon,Korea
 - e-mail : poiu8944@gmail.com
