@@ -23,10 +23,9 @@ layout: article
 #   fr-FR   : *FR
 #   fr-LU   : *FR
 #   # @end locale config
+title: Ji Won Jeong
 key: page-about
 ---
-
-# JI WON JEONG
 
 - address : Yuseong-gu,Daejeon,Korea
 - e-mail : poiu8944@gmail.com
