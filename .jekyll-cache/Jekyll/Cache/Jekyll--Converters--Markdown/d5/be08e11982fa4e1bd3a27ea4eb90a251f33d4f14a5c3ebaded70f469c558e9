@@ -1,0 +1,65 @@
+I"<h1 id="ji-won-jeong">JI WON JEONG</h1>
+
+<p>Yuseong-gu,Daejeon,Korea
+poiu8944@cnu.ac.kr
++82-10-6850-
+jivvon.github.io
+github.com/Jivvon</p>
+
+<h3 id="objective"><strong>OBJECTIVE</strong></h3>
+<hr />
+<p>Passionate and hard-working university student who has high-level technique and experiences is
+looking for the internship. Ability to do teamwork and multi-task will support ( ) in achieving
+the goal.</p>
+
+<h3 id="education"><strong>EDUCATION</strong></h3>
+
+<ul>
+  <li>Chungnam National University, Korea <strong><code class="highlighter-rouge">2015.03 - current</code></strong></li>
+  <li>Major : Computer Science and Engineering</li>
+  <li>Degree : Bachelor of Science, Expected 2022</li>
+</ul>
+
+<h2 id="skill"><strong>SKILL</strong></h2>
+
+<ul>
+  <li>Language : Python / C++ / JAVA</li>
+  <li>Web : HTML5 / CSS / Javascript / Node.js / Vue.js</li>
+</ul>
+
+<h2 id="experience"><strong>EXPERIENCE</strong></h2>
+
+<ul>
+  <li>FE / BE Developer of The Armed Forces Weather Support System in Weather Group of R.O.K Air Force <strong><code class="highlighter-rouge">2016.02 - 2018.02 (military service)</code></strong></li>
+  <li>TEC Service Desk Field Associate Volunteer in Olympic Winter Games PyeongChang 2018 <strong><code class="highlighter-rouge">2018.02 - 2018.03</code></strong></li>
+  <li>Samsung PC Engineer in Paralympic Winter Games PyeongChang 2018 <strong><code class="highlighter-rouge">2018.03 - 2018.04</code></strong></li>
+</ul>
+
+<p><strong><a href="github.com/Jivvon/cnu-macro">PROJECTS
+CNU-MACRO</a></strong> - github.com/Jivvon/cnu-macro <strong><code class="highlighter-rouge">2020.02</code></strong></p>
+
+<ul>
+  <li>Automate register for courses only Chungnam National University’s</li>
+  <li>Recognition numbers with Python OCR library</li>
+</ul>
+
+<p><strong><a href="github.com/Jivvon/2019_2_OOP/tree/master/termproject">PUYOPUYO</a></strong> - github.com/Jivvon/2019_2_OOP/tree/master/termproject <strong><code class="highlighter-rouge">2019.12</code></strong></p>
+<ul>
+  <li>Available to play the game on the console.</li>
+  <li>Project application made by C++ only for ‘Object Oriented Design’ course.</li>
+</ul>
+
+<p><strong><a href="github.com/Jivvon/2019_EPIS_Tufu4">VOWOW</a></strong> - github.com/Jivvon/2019_EPIS_Tufu4 <strong><code class="highlighter-rouge">2019.06 - 2019.12</code></strong></p>
+
+<ul>
+  <li>Android Application for Startup Competition ( <strong>The President of Korea Racing Authority award</strong> )</li>
+  <li>Help users search and book a center for the animal registration.</li>
+  <li>Developed server and database with Node.js, MySQL.</li>
+</ul>
+
+<p><strong>The Armed Forces Weather Support System <code class="highlighter-rouge">2016.04 - 2018.02</code></strong></p>
+
+<ul>
+  <li>Developed and designed interactive charts with Vue.js, D3.js, and Node.js</li>
+</ul>
+:ET

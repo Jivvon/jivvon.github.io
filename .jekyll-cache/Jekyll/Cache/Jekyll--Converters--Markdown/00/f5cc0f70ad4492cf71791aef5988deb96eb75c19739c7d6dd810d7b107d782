@@ -1,0 +1,99 @@
+I"�	<h2 id="주요-변경-기능">주요 변경 기능</h2>
+
+<ul>
+  <li>사용자 로그인 -&gt; 카카오</li>
+  <li>API 요청
+    <ul>
+      <li>동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록)</li>
+      <li>대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="todo">TODO</h2>
+
+<ul>
+  <li>DB 변경
+    <ul>
+      <li>hospital_tb
+        <ul>
+          <li>기존 user_tb</li>
+          <li>계좌번호 + 은행명</li>
+        </ul>
+      </li>
+      <li>pet_info_tb
+        <ul>
+          <li><strong>반려동물 key - 일련번호 (only 내장형)</strong></li>
+          <li>반려동물 정보</li>
+          <li><em>주인 key (primary)</em></li>
+          <li><em>대행업체 key (primary)</em></li>
+        </ul>
+      </li>
+      <li>user_tb(사용자 새로 만들 것)
+        <ul>
+          <li><strong>사용자 key</strong></li>
+          <li>사용자 계정 정보 (카카오 계정) - 토큰</li>
+          <li>닉네임</li>
+        </ul>
+      </li>
+      <li>후기_tb
+        <ul>
+          <li><strong>후기 index</strong></li>
+          <li><em>병원 key</em></li>
+          <li><em>사용자 key</em></li>
+          <li>내용</li>
+          <li>작성일</li>
+        </ul>
+      </li>
+      <li>커뮤니티 분류
+        <ul>
+          <li>Q&amp;A</li>
+          <li>trade</li>
+          <li>pet_find</li>
+          <li>pet_sale</li>
+        </ul>
+      </li>
+      <li>상품_tb (추후)
+        <ul>
+          <li><strong>상품 index</strong></li>
+          <li>상품 이미지</li>
+          <li>설명</li>
+          <li>가격</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="서버-변경">서버 변경</h2>
+
+<ul>
+  <li>url 수정 -&gt; 수정사항 알려주기</li>
+  <li>라우터 적용</li>
+  <li>메일보내기 form 만들어서</li>
+  <li>기능
+    <ul>
+      <li>예약 제거</li>
+      <li>후기 작성, 수정, 제거</li>
+      <li>커뮤니티 수정 제거</li>
+      <li>사용자 회원 탈퇴</li>
+      <li>병원 회원 탈퇴</li>
+      <li>반려동물 정보 추가(예약완료 될 때)</li>
+    </ul>
+  </li>
+  <li>관리자 페이지 대충</li>
+</ul>
+
+<hr />
+
+<h2 id="todo-today">TODO TODAY</h2>
+
+<ul>
+  <li>라우터 적용</li>
+  <li>node에서 메일 사용하기</li>
+</ul>
+:ET

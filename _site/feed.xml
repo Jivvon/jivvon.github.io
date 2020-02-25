@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-02-25T01:07:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-02-25T17:47:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
 </subtitle><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><entry><title type="html">codepen timetable</title><link href="http://localhost:4000/2020/02/24/codepen-timetable.html" rel="alternate" type="text/html" title="codepen timetable" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/codepen-timetable</id><content type="html" xml:base="http://localhost:4000/2020/02/24/codepen-timetable.html">&lt;div&gt;&lt;div class=&quot;extensions extensions--demo&quot;&gt;
 &lt;iframe src=&quot;//codepen.io/markmurray/embed/wImHf/?theme-id=0&amp;amp;default-tab=html,result&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -232,4 +232,152 @@
   &lt;li&gt;:tabclose or :tabc - 현재 탭과 그 안의 창들 닫기&lt;/li&gt;
   &lt;li&gt;:tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기&lt;/li&gt;
   &lt;li&gt;:tabdo command - 모든 탭에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; 실행하기 (예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;:tabdo q&lt;/code&gt; - 열린 모든 탭 닫기)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="vi" /><category term="vim" /><category term="vi_cheet" /><category term="vim_cheet" /><category term="cheet" /><summary type="html">Vim Cheat Sheet 전역 :help keyword - keyword에 대한 도움말 열기 :saveas file - file로 저장하기 :close - 현재 영역 닫기 K - 커서가 위치한 단어에 대한 맨페이지 열기 커서 이동 h - 왼쪽으로 이동 j - 아래로 이동 k - 위로 이동 l - 오른쪽으로 이동 H - 화면 상단으로 이동 M - 화면 중간으로 이동 L - 화면 하단으로 이동 w - 다음 단어 시작으로 점프 W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) e - 다음 단어 끝으로 점프 E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) b - 이전 단어 시작으로 점프 B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) % - 현재 괄호와 맞는 짝의 괄호로 이동 (:h matchpairs를 통해 더 많은 정보를 얻을 수 있다.) 0 - 행의 처음으로 점프 ^ - 행의 시작 문자로 점프 $ - 행의 끝으로 점프 g_ - 행의 끝 문자로 점프 gg - 문서 첫 행으로 점프 G - 문서 마지막 행으로 점프 5G - 5번째 행으로 점프 fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동 tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동 Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동 Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동 ; - 가장 최근의 f, t, F나 T 명령을 다시 실행 , - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행 } - 다음 단락(또는 함수/블록)으로 이동 { - 이전 단락(또는 함수/블록)으로 이동 zz - 커서가 있는 행을 중간으로 하도록 화면 이동 Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동 Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동 Ctrl + b - 한 화면 위로 Ctrl + f - 한 화면 아래로 Ctrl + d - 반 화면 아래로 Ctrl + u - 반 화면 위로 Tip 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동. 삽입 모드 - 택스트 삽입/추가 i - 커서 앞에 삽입 I - 행 시작에 삽입 a - 커서 뒤에 추가 A - 행 끝에 추가 o - 현재 행 아래에 새 행 추가 O - 현재 행 위에 새 행 추가 ea - 단어 끝에 추가 Esc - 삽입 모드 종료 편집 r - 한 글자 바꾸기 J - 현재 행과 다음 행을 연결 gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결 gwip - 단락을 리플로우 cc - 행 전체를 새로 쓰기 C - 행 끝까지를 새로 쓰기 c$ - 행 끝까지를 새로 쓰기 ciw - 단어 전체를 새로 쓰기 cw - 단어 끝까지를 새로 쓰기 s - 한 글자 삭제하고 삽입 모드 시작 S - 행 삭제하고 텍스트 입력 (cc와 동일) xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합) u - 실행 취소 Ctrl + r - 다시 실행 . - 마지막 명령 반복 텍스트 선택 (비주얼 모드) v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사) V - 행 단위 선택 모드 시작 o - 선택 영역의 반대쪽 끝으로 이동 Ctrl + v - 블록 선택 모드 시작 O - 블록의 반대쪽 모서리로 이동 aw - 단어 선택 ab - () 블럭 선택 aB - {} 블럭 선택 ib - () 블럭의 내부 선택 iB - {} 블럭의 내부 선택 Esc - 선택 모드 종료 선택 모드 명령 &amp;gt; - 텍스트를 오른쪽으로 이동 &amp;lt; - 텍스트를 왼쪽으로 이동 y - 선택한 텍스트 복사 d - 선택한 텍스트 삭제 ~ - 대소문자 반전 레지스터 :reg - 레지스터 내용물 표시 “xy - 레지스터 x로 복사 “xp - 레지스터 x의 내용물 붙어넣기 Tip 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임. Tip 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음. 표시 :marks - 표시 항목 표시 ma - 현재 위치를 표시 a로 설정 `a - 표시 a의 위치로 점프 y`a - 표시 a의 위치까지 복사 매크로 qa - 매크로 a 기록 시작 q - 매크로 기록 중지 @a - 매크로 a 실행 @@ - 마지막 실행한 매크로 재실행 잘라내기와 붙여넣기 yy - 행 복사 2yy - 2줄 복사 yw - 커서 위치에서 다음 단어 시작까지 복사 y$ - 행 끝까지 복사 p - 커서 위치 뒤에 붙여넣기 P - 커서 위치 앞에 붙여넣기 dd - 행 잘라내기 2dd - 2줄 잘라내기 dw - 커서 위치에서 다음 단어 시작까지 잘라내기 D - 행 끝까지 잘라내기 d$ - 행 끝까지 잘라내기 x - 한 글자 잘라내기 나가기 :w - 저장하고, 나가지는 않기 :w !sudo tee % - sudo로 현재 파일 저장 :wq or :x or ZZ - 저장하고 나가기 :q - 나가기 (저장하지 않은 변경 사항 있으면 실패) :q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림) :wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기 찾기와 바꾸기 /pattern - 패턴 찾기 ?pattern - 패턴 역방향 찾기 \vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요) n - 같은 방향으로 찾기 반복 N - 반대 방향으로 찾기 반복 :%s/old/new/g - 파일 내 모든 old를 new로 바꾸기 :%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기 :noh - 찾기 강조 표시 없애기 여러 파일에서 찾기 :vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기 e.g.:vimgrep /foo/ */ :cn - 다음 일치 항목으로 점프 :cp - 이전 일치 항목으로 점프 :copen - 일치 목록을 새 창으로 열기 여러 파일 작업 :e file - 새 버퍼에서 파일 편집 :bnext or :bn - 다음 버퍼로 이동 :bprev or :bp - 이전 버퍼로 이동 :bd - 버퍼 삭제 (파일 닫기) :ls - 열린 버퍼 모두 나열 :sp file - 새 버퍼에 파일 열고 상하로 창 분할 :vsp file - 새 버퍼에 파일 열고 좌우로 창 분할 Ctrl + ws - 상하로 창 분할 Ctrl + ww - 창 전환 Ctrl + wq - 창 닫기 Ctrl + wv - 좌우로 창 분할 Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할) Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할) Ctrl + wj - 아래 창으로 이동 (상하 분할) Ctrl + wk - 위 창으로 이동 (상하 분할) 탭 :tabnew or :tabnew file - 새 탭에서 파일 열기 Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동 gt or :tabnext or :tabn - 다음 탭으로 이동 gT or :tabprev or :tabp - 이전 탭으로 이동 #gt - #번 탭으로 이동 :tabmove # - 현재 탭을 #번째로 이동 (0부터 시작) :tabclose or :tabc - 현재 탭과 그 안의 창들 닫기 :tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기 :tabdo command - 모든 탭에서 command 실행하기 (예를 들어, :tabdo q - 열린 모든 탭 닫기)</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="vi" /><category term="vim" /><category term="vi_cheet" /><category term="vim_cheet" /><category term="cheet" /><summary type="html">Vim Cheat Sheet 전역 :help keyword - keyword에 대한 도움말 열기 :saveas file - file로 저장하기 :close - 현재 영역 닫기 K - 커서가 위치한 단어에 대한 맨페이지 열기 커서 이동 h - 왼쪽으로 이동 j - 아래로 이동 k - 위로 이동 l - 오른쪽으로 이동 H - 화면 상단으로 이동 M - 화면 중간으로 이동 L - 화면 하단으로 이동 w - 다음 단어 시작으로 점프 W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) e - 다음 단어 끝으로 점프 E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) b - 이전 단어 시작으로 점프 B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) % - 현재 괄호와 맞는 짝의 괄호로 이동 (:h matchpairs를 통해 더 많은 정보를 얻을 수 있다.) 0 - 행의 처음으로 점프 ^ - 행의 시작 문자로 점프 $ - 행의 끝으로 점프 g_ - 행의 끝 문자로 점프 gg - 문서 첫 행으로 점프 G - 문서 마지막 행으로 점프 5G - 5번째 행으로 점프 fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동 tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동 Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동 Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동 ; - 가장 최근의 f, t, F나 T 명령을 다시 실행 , - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행 } - 다음 단락(또는 함수/블록)으로 이동 { - 이전 단락(또는 함수/블록)으로 이동 zz - 커서가 있는 행을 중간으로 하도록 화면 이동 Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동 Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동 Ctrl + b - 한 화면 위로 Ctrl + f - 한 화면 아래로 Ctrl + d - 반 화면 아래로 Ctrl + u - 반 화면 위로 Tip 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동. 삽입 모드 - 택스트 삽입/추가 i - 커서 앞에 삽입 I - 행 시작에 삽입 a - 커서 뒤에 추가 A - 행 끝에 추가 o - 현재 행 아래에 새 행 추가 O - 현재 행 위에 새 행 추가 ea - 단어 끝에 추가 Esc - 삽입 모드 종료 편집 r - 한 글자 바꾸기 J - 현재 행과 다음 행을 연결 gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결 gwip - 단락을 리플로우 cc - 행 전체를 새로 쓰기 C - 행 끝까지를 새로 쓰기 c$ - 행 끝까지를 새로 쓰기 ciw - 단어 전체를 새로 쓰기 cw - 단어 끝까지를 새로 쓰기 s - 한 글자 삭제하고 삽입 모드 시작 S - 행 삭제하고 텍스트 입력 (cc와 동일) xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합) u - 실행 취소 Ctrl + r - 다시 실행 . - 마지막 명령 반복 텍스트 선택 (비주얼 모드) v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사) V - 행 단위 선택 모드 시작 o - 선택 영역의 반대쪽 끝으로 이동 Ctrl + v - 블록 선택 모드 시작 O - 블록의 반대쪽 모서리로 이동 aw - 단어 선택 ab - () 블럭 선택 aB - {} 블럭 선택 ib - () 블럭의 내부 선택 iB - {} 블럭의 내부 선택 Esc - 선택 모드 종료 선택 모드 명령 &amp;gt; - 텍스트를 오른쪽으로 이동 &amp;lt; - 텍스트를 왼쪽으로 이동 y - 선택한 텍스트 복사 d - 선택한 텍스트 삭제 ~ - 대소문자 반전 레지스터 :reg - 레지스터 내용물 표시 “xy - 레지스터 x로 복사 “xp - 레지스터 x의 내용물 붙어넣기 Tip 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임. Tip 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음. 표시 :marks - 표시 항목 표시 ma - 현재 위치를 표시 a로 설정 `a - 표시 a의 위치로 점프 y`a - 표시 a의 위치까지 복사 매크로 qa - 매크로 a 기록 시작 q - 매크로 기록 중지 @a - 매크로 a 실행 @@ - 마지막 실행한 매크로 재실행 잘라내기와 붙여넣기 yy - 행 복사 2yy - 2줄 복사 yw - 커서 위치에서 다음 단어 시작까지 복사 y$ - 행 끝까지 복사 p - 커서 위치 뒤에 붙여넣기 P - 커서 위치 앞에 붙여넣기 dd - 행 잘라내기 2dd - 2줄 잘라내기 dw - 커서 위치에서 다음 단어 시작까지 잘라내기 D - 행 끝까지 잘라내기 d$ - 행 끝까지 잘라내기 x - 한 글자 잘라내기 나가기 :w - 저장하고, 나가지는 않기 :w !sudo tee % - sudo로 현재 파일 저장 :wq or :x or ZZ - 저장하고 나가기 :q - 나가기 (저장하지 않은 변경 사항 있으면 실패) :q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림) :wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기 찾기와 바꾸기 /pattern - 패턴 찾기 ?pattern - 패턴 역방향 찾기 \vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요) n - 같은 방향으로 찾기 반복 N - 반대 방향으로 찾기 반복 :%s/old/new/g - 파일 내 모든 old를 new로 바꾸기 :%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기 :noh - 찾기 강조 표시 없애기 여러 파일에서 찾기 :vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기 e.g.:vimgrep /foo/ */ :cn - 다음 일치 항목으로 점프 :cp - 이전 일치 항목으로 점프 :copen - 일치 목록을 새 창으로 열기 여러 파일 작업 :e file - 새 버퍼에서 파일 편집 :bnext or :bn - 다음 버퍼로 이동 :bprev or :bp - 이전 버퍼로 이동 :bd - 버퍼 삭제 (파일 닫기) :ls - 열린 버퍼 모두 나열 :sp file - 새 버퍼에 파일 열고 상하로 창 분할 :vsp file - 새 버퍼에 파일 열고 좌우로 창 분할 Ctrl + ws - 상하로 창 분할 Ctrl + ww - 창 전환 Ctrl + wq - 창 닫기 Ctrl + wv - 좌우로 창 분할 Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할) Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할) Ctrl + wj - 아래 창으로 이동 (상하 분할) Ctrl + wk - 위 창으로 이동 (상하 분할) 탭 :tabnew or :tabnew file - 새 탭에서 파일 열기 Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동 gt or :tabnext or :tabn - 다음 탭으로 이동 gT or :tabprev or :tabp - 이전 탭으로 이동 #gt - #번 탭으로 이동 :tabmove # - 현재 탭을 #번째로 이동 (0부터 시작) :tabclose or :tabc - 현재 탭과 그 안의 창들 닫기 :tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기 :tabdo command - 모든 탭에서 command 실행하기 (예를 들어, :tabdo q - 열린 모든 탭 닫기)</summary></entry><entry><title type="html">농림축산식품 공공 및 빅데이터 활용 창업경진대회 중간 발표 결과</title><link href="http://localhost:4000/2019/08/08/startup-PT.html" rel="alternate" type="text/html" title="농림축산식품 공공 및 빅데이터 활용 창업경진대회 중간 발표 결과" /><published>2019-08-08T00:00:00+09:00</published><updated>2019-08-08T00:00:00+09:00</updated><id>http://localhost:4000/2019/08/08/startup-PT</id><content type="html" xml:base="http://localhost:4000/2019/08/08/startup-PT.html">&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;상표출원&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;수익성 : 타겟이 누구냐. 매출 계획 구체적으로. 서비스랑 묶어서.&lt;/p&gt;
+
+&lt;p&gt;사업에 대한 고민한 흔적이 보이도록.&lt;/p&gt;
+
+&lt;p&gt;이미 한 것. 앞으로 할 것. 짧 굵.&lt;/p&gt;
+
+&lt;p&gt;공공데이터 활용한 구체적인 예시.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;petstagram&quot;&gt;petstagram&lt;/h3&gt;
+
+&lt;p&gt;반려동물 공감문화 확산 -&amp;gt; 사료가 가장 많이 유통됨.&lt;/p&gt;
+
+&lt;p&gt;가장 중요한 시간 골든타임. 분실되는 개체 수 줄이기 위한 커뮤니티&lt;/p&gt;
+
+&lt;p&gt;컬러필 어플 협력&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;커뮤니티&lt;/li&gt;
+  &lt;li&gt;실시간 알림 서비스 (지역기반 가까운 곳부터)&lt;/li&gt;
+  &lt;li&gt;공공데이터 활용하여. 신고자에게 알림 (매칭) 추후 이미지 딥러닝&lt;/li&gt;
+  &lt;li&gt;자신의 반려동물과 닮은 유기동물을 매칭하여 입양 확대 (CSV)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;검색같은 수동 -&amp;gt; 실시간 알림서비스, 매칭서비스로 보다 능동적인 방식&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;중고나라 vs 당근마켓&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;유기동물 입양 활성화. 맹견에 대한 관리 강화. 유기동물 입양할 경우 지원 확대. 이용해서 유기동물 &lt;strong&gt;입양 확대&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; 펫 커뮤니티 확산 + 유통, 광고로 수익&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;vowow&quot;&gt;VOWOW&lt;/h3&gt;
+
+&lt;p&gt;대행업체가 병원에만 국한되지 않으므로 이에 대한 설명을 앞에 정의 필요&lt;/p&gt;
+
+&lt;p&gt;법적으로 문제가 없는지.&lt;/p&gt;
+
+&lt;p&gt;수익 창출 정확하게. 타겟 명확하게. 사회공헌으로 갔을 때 서비스 지속 가능 ?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;등록 이후의 서비스 부족.&lt;/strong&gt; -&amp;gt; 분실. 가출. 했을 경우 ?!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;등록하려고 어플 설치하지는 않을 거 아니냐 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="농림축산식품부" /><category term="농정원" /><category term="창업경진대회" /><category term="빅데이터" /><category term="공공데이터" /><summary type="html">TODO 상표출원 수익성 : 타겟이 누구냐. 매출 계획 구체적으로. 서비스랑 묶어서. 사업에 대한 고민한 흔적이 보이도록. 이미 한 것. 앞으로 할 것. 짧 굵. 공공데이터 활용한 구체적인 예시. petstagram 반려동물 공감문화 확산 -&amp;gt; 사료가 가장 많이 유통됨. 가장 중요한 시간 골든타임. 분실되는 개체 수 줄이기 위한 커뮤니티 컬러필 어플 협력 커뮤니티 실시간 알림 서비스 (지역기반 가까운 곳부터) 공공데이터 활용하여. 신고자에게 알림 (매칭) 추후 이미지 딥러닝 자신의 반려동물과 닮은 유기동물을 매칭하여 입양 확대 (CSV) 검색같은 수동 -&amp;gt; 실시간 알림서비스, 매칭서비스로 보다 능동적인 방식 중고나라 vs 당근마켓 유기동물 입양 활성화. 맹견에 대한 관리 강화. 유기동물 입양할 경우 지원 확대. 이용해서 유기동물 입양 확대. -&amp;gt; 펫 커뮤니티 확산 + 유통, 광고로 수익 VOWOW 대행업체가 병원에만 국한되지 않으므로 이에 대한 설명을 앞에 정의 필요 법적으로 문제가 없는지. 수익 창출 정확하게. 타겟 명확하게. 사회공헌으로 갔을 때 서비스 지속 가능 ? 등록 이후의 서비스 부족. -&amp;gt; 분실. 가출. 했을 경우 ?! 등록하려고 어플 설치하지는 않을 거 아니냐 ?</summary></entry><entry><title type="html">농림축산식품 공공 및 빅데이터 활용 창업경진대회 멘토링 결과</title><link href="http://localhost:4000/2019/08/08/startup-mentoring.html" rel="alternate" type="text/html" title="농림축산식품 공공 및 빅데이터 활용 창업경진대회 멘토링 결과" /><published>2019-08-08T00:00:00+09:00</published><updated>2019-08-08T00:00:00+09:00</updated><id>http://localhost:4000/2019/08/08/startup-mentoring</id><content type="html" xml:base="http://localhost:4000/2019/08/08/startup-mentoring.html">&lt;h2 id=&quot;주요-변경-기능&quot;&gt;주요 변경 기능&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사용자 로그인 -&amp;gt; 카카오&lt;/li&gt;
+  &lt;li&gt;API 요청
+    &lt;ul&gt;
+      &lt;li&gt;동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&amp;gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록)&lt;/li&gt;
+      &lt;li&gt;대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DB 변경
+    &lt;ul&gt;
+      &lt;li&gt;hospital_tb
+        &lt;ul&gt;
+          &lt;li&gt;기존 user_tb&lt;/li&gt;
+          &lt;li&gt;계좌번호 + 은행명&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;pet_info_tb
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;반려동물 key - 일련번호 (only 내장형)&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;반려동물 정보&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;주인 key (primary)&lt;/em&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;대행업체 key (primary)&lt;/em&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;user_tb(사용자 새로 만들 것)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;사용자 key&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;사용자 계정 정보 (카카오 계정) - 토큰&lt;/li&gt;
+          &lt;li&gt;닉네임&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;후기_tb
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;후기 index&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;병원 key&lt;/em&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;사용자 key&lt;/em&gt;&lt;/li&gt;
+          &lt;li&gt;내용&lt;/li&gt;
+          &lt;li&gt;작성일&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;커뮤니티 분류
+        &lt;ul&gt;
+          &lt;li&gt;Q&amp;amp;A&lt;/li&gt;
+          &lt;li&gt;trade&lt;/li&gt;
+          &lt;li&gt;pet_find&lt;/li&gt;
+          &lt;li&gt;pet_sale&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;상품_tb (추후)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;상품 index&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;상품 이미지&lt;/li&gt;
+          &lt;li&gt;설명&lt;/li&gt;
+          &lt;li&gt;가격&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;서버-변경&quot;&gt;서버 변경&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;url 수정 -&amp;gt; 수정사항 알려주기&lt;/li&gt;
+  &lt;li&gt;라우터 적용&lt;/li&gt;
+  &lt;li&gt;메일보내기 form 만들어서&lt;/li&gt;
+  &lt;li&gt;기능
+    &lt;ul&gt;
+      &lt;li&gt;예약 제거&lt;/li&gt;
+      &lt;li&gt;후기 작성, 수정, 제거&lt;/li&gt;
+      &lt;li&gt;커뮤니티 수정 제거&lt;/li&gt;
+      &lt;li&gt;사용자 회원 탈퇴&lt;/li&gt;
+      &lt;li&gt;병원 회원 탈퇴&lt;/li&gt;
+      &lt;li&gt;반려동물 정보 추가(예약완료 될 때)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;관리자 페이지 대충&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;todo-today&quot;&gt;TODO TODAY&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;라우터 적용&lt;/li&gt;
+  &lt;li&gt;node에서 메일 사용하기&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="농림축산식품부" /><category term="농정원" /><category term="창업경진대회" /><category term="빅데이터" /><category term="공공데이터" /><summary type="html">주요 변경 기능 사용자 로그인 -&amp;gt; 카카오 API 요청 동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&amp;gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록) 대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서) TODO DB 변경 hospital_tb 기존 user_tb 계좌번호 + 은행명 pet_info_tb 반려동물 key - 일련번호 (only 내장형) 반려동물 정보 주인 key (primary) 대행업체 key (primary) user_tb(사용자 새로 만들 것) 사용자 key 사용자 계정 정보 (카카오 계정) - 토큰 닉네임 후기_tb 후기 index 병원 key 사용자 key 내용 작성일 커뮤니티 분류 Q&amp;amp;A trade pet_find pet_sale 상품_tb (추후) 상품 index 상품 이미지 설명 가격 서버 변경 url 수정 -&amp;gt; 수정사항 알려주기 라우터 적용 메일보내기 form 만들어서 기능 예약 제거 후기 작성, 수정, 제거 커뮤니티 수정 제거 사용자 회원 탈퇴 병원 회원 탈퇴 반려동물 정보 추가(예약완료 될 때) 관리자 페이지 대충 TODO TODAY 라우터 적용 node에서 메일 사용하기</summary></entry></feed>
