@@ -1,0 +1,64 @@
+I"�<p><strong>git</strong> : <a href="http://github.com/Jivvon/movie-app-react">react study</a></p>
+
+<h2 id="기본-react-2">기본 react 2</h2>
+
+<blockquote>
+  <p><strong>prop-types</strong> 를 이용하여 props의 데이터 유효성을 검증할 수 있다.</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">npm i prop-types</code></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Animal</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">isRequired</span><span class="p">,</span>
+    <span class="na">legs</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">number</span><span class="p">.</span><span class="nx">isRequired</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>자세한 것은 <a href="https://www.npmjs.com/package/prop-types">prop-types</a>에서 알아보자.</p>
+
+<h3 id="class-component">class component</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Animal</span><span class="p">({</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">legs</span> <span class="p">}){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="c1">// dog</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">legs</span><span class="p">)</span> <span class="c1">// 4</span>
+    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">type</span> <span class="nx">is</span> <span class="p">{</span><span class="nx">type</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>위는 function component이다. 이를 class component로 바꾸면</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="k">this</span> <span class="nx">is</span> <span class="nx">a</span> <span class="kd">class</span> <span class="nx">component</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>이 된다.</p>
+
+<h4 id="react는-모든-class-component-안의-render-함수를-실행한다">react는 모든 class component 안의 render() 함수를 실행한다.</h4>
+
+<p><strong>class component와 function component의 차이가 쉽게 설명되어있다</strong> : <a href="https://overreacted.io/ko/how-are-function-components-different-from-classes/">여기</a></p>
+
+<blockquote>
+  <p>핵심은 class component는 function component와 다르게 말 그대로 ‘클래스’이기 때문에 파라미터를 받지 못한다. 따라서 부모로부터 넘겨지는 데이터를 <strong>this.props</strong>로 받을 수 있는데, 여기서 this가 바뀔 수 있기 때문에 이를 클로저로 감싸줘야 한다는 것이다.</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">props</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span> <span class="c1">// 렌더링 될 때의 props</span>
+    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">props</span> <span class="k">in</span> <span class="nx">closure</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>React.Component를 확장하면 state를 사용할 수 있다. state는 <strong>데이터를 동적으로 다룰 수 있다.</strong> 즉, component의 data를 바꿀 수 있다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">props</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span> <span class="c1">// 렌더링 될 때의 props</span>
+    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">props</span> <span class="k">in</span> <span class="nx">closure</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

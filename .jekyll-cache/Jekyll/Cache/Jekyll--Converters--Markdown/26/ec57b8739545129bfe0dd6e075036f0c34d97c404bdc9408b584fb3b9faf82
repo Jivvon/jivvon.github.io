@@ -1,0 +1,16 @@
+I")<p><strong>git</strong> : <a href="http://github.com/Jivvon/movie-app-react">react study</a></p>
+
+<h2 id="기본-react-2">기본 react 2</h2>
+
+<blockquote>
+  <p><strong>prop-types</strong> 를 이용하여 props의 데이터 유효성을 검증할 수 있다.</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">npm i prop-types</code></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Animal</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">isRequired</span><span class="p">,</span>
+    <span class="na">legs</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">number</span><span class="p">.</span><span class="nx">isRequired</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

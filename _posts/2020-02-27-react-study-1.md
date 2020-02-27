@@ -5,6 +5,7 @@ tags: react study
 
 **git** : [react study](http://github.com/Jivvon/movie-app-react)
 
+## 기본 react 1
 
 react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.
 
@@ -21,7 +22,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 처럼 하나만 렌더링 가능 ! 하므로 가장 큰 DOM인 App 안에 다른 것들이 들어가야 한다.
 
-### **component는 재사용 가능하다** 또한, **component 간에 정보를 주고받을 수 있다**
+#### **component는 재사용 가능하다** 또한, **component 간에 정보를 주고받을 수 있다**
 
 ``` javascript
 <Animal type="dog" legs=4 > // Animal 컴포넌트에 type이라는 속성의 값으로 dog를 넘겨준 것.
@@ -46,3 +47,7 @@ function Animal({ type, legs }){
     return <div>type is {type}</div>
 }
 ```
+
+**javascript는 중괄호'{}'로 묶는다**
+
+**component의 key는 unique해야 한다. -> parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자.**

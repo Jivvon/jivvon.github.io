@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>react 1 - Jivvlog</title>
 
-<meta name="description" content="git : react studyreact는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.모든 요소는 component이다.and component는 반드시 대분자로 시작해야 한...">
+<meta name="description" content="git : react study기본 react 1react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.모든 요소는 component이다.and component는 반드시 대...">
 <link rel="canonical" href="http://localhost:4000/2020/02/27/react-study-1.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -303,6 +303,8 @@
 <!-- end custom article top snippet -->
 <div class="article__content" itemprop="articleBody"><p><strong>git</strong> : <a href="http://github.com/Jivvon/movie-app-react">react study</a></p>
 
+<h2 id="기본-react-1">기본 react 1</h2>
+
 <p>react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.</p>
 
 <p><strong>모든 요소는 component이다.</strong>
@@ -317,7 +319,7 @@ and component는 반드시 대분자로 시작해야 한다 !</p>
 
 <p>처럼 하나만 렌더링 가능 ! 하므로 가장 큰 DOM인 App 안에 다른 것들이 들어가야 한다.</p>
 
-<h3 id="component는-재사용-가능하다-또한-component-간에-정보를-주고받을-수-있다"><strong>component는 재사용 가능하다</strong> 또한, <strong>component 간에 정보를 주고받을 수 있다</strong></h3>
+<h4 id="component는-재사용-가능하다-또한-component-간에-정보를-주고받을-수-있다"><strong>component는 재사용 가능하다</strong> 또한, <strong>component 간에 정보를 주고받을 수 있다</strong></h4>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">Animal</span> <span class="nx">type</span><span class="o">=</span><span class="dl">"</span><span class="s2">dog</span><span class="dl">"</span> <span class="nx">legs</span><span class="o">=</span><span class="mi">4</span> <span class="o">&gt;</span> <span class="c1">// Animal 컴포넌트에 type이라는 속성의 값으로 dog를 넘겨준 것.</span>
 </code></pre></div></div>
@@ -339,6 +341,10 @@ props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는
     <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">type</span> <span class="nx">is</span> <span class="p">{</span><span class="nx">type</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
 </span><span class="p">}</span>
 </code></pre></div></div>
+
+<p><strong>javascript는 중괄호’{}’로 묶는다</strong></p>
+
+<p><strong>component의 key는 unique해야 한다. -&gt; parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자.</strong></p>
 </div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-27T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
@@ -350,7 +356,7 @@ props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/24/vim-cheet.html">vi 단축키</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/24/vim-cheet.html">vi 단축키</a></div><div class="next"><span>다음</span><a href="/2020/02/27/react-study-2.html">react 2</a></div></div></div>
 
 </div>
 
