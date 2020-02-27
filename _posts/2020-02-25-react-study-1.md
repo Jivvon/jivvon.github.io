@@ -3,8 +3,6 @@ title: react 1
 tags: react study
 ---
 
-**git** : [react study](http://github.com/Jivvon/movie-app-react)
-
 ## 기본 react 1
 
 react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.

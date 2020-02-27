@@ -3,8 +3,6 @@ title: react 2
 tags: react study
 ---
 
-**git** : [react study](http://github.com/Jivvon/movie-app-react)
-
 ## 기본 react 2
 
 > **prop-types** 를 이용하여 props의 데이터 유효성을 검증할 수 있다.
