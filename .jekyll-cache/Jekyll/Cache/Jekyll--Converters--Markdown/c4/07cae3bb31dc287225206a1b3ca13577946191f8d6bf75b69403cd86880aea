@@ -1,0 +1,13 @@
+I"C<p><strong><span style="color:red">순서대로 실행</span></strong></p>
+
+<h4 id="mounting">mounting</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. constructor()
+2. render()
+3. componentDidMount()
+</code></pre></div></div>
+
+<ul>
+  <li>updating</li>
+  <li>unmounting</li>
+</ul>
+:ET

@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="ko">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>react life cycle 라이프사이클 - Jivvlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>React life cycle 라이프사이클 - Jivvlog</title>
 
-<meta name="description" content="">
+<meta name="description" content="React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 라이프 사이클 이벤트라고 한다.라이프사이클마다 주로 사용되는 메소드만 정리하였다. 각 메소드는 반드시 순서대로 실행된다.mounting1. constructor()2. ren...">
 <link rel="canonical" href="http://localhost:4000/2020/02/27/react-study-life-cycle.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -286,13 +286,13 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>react life cycle 라이프사이클</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>React life cycle 라이프사이클</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Github에서 확인하기"
             href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-02-27-react-study-life-cycle.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="react life cycle 라이프사이클"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="React life cycle 라이프사이클"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=react">react</a>
+                href="/archive.html?tag=React">React</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=study">study</a>
@@ -307,10 +307,32 @@
                 href="/archive.html?tag=%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4">라이프사이클</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 27일</span>
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-27T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study,life-cycle,lifecycle,라이프사이클"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+    <meta itemprop="keywords" content="React,study,life-cycle,lifecycle,라이프사이클"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody">
+<div class="article__content" itemprop="articleBody"><p>React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 <strong>라이프 사이클 이벤트</strong>라고 한다.</p>
+
+<p>라이프사이클마다 주로 사용되는 메소드만 정리하였다. 각 메소드는 반드시 
+<strong><span style="color:red">순서대로 실행</span></strong>된다.</p>
+
+<h4 id="mounting">mounting</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. constructor()
+2. render()
+3. componentDidMount()
+</code></pre></div></div>
+
+<p>componentDidMount : AJAX, Timer를 주로 작성한다.</p>
+
+<h4 id="updating">updating</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. render()
+2. componentDidUpdate()
+</code></pre></div></div>
+
+<h4 id="unmounting">unmounting</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. componentWillUnmount()
+</code></pre></div></div>
+
+<p>componentWillUnmount : Timer, async API를 제거한다.</p>
 </div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-27T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
@@ -322,7 +344,7 @@
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/27/react-study-2.html">react 2</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/26/react-study-2.html">react 2</a></div></div></div>
 
 </div>
 
