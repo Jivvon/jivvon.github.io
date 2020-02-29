@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>react 1 - Jivvlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>react 3 - Jivvlog</title>
 
-<meta name="description" content="기본 react 1react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.모든 요소는 component이다.and component는 반드시 대분자로 시작해야 한다 !reac...">
-<link rel="canonical" href="http://localhost:4000/2020/02/25/react-study-1.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="기본 react 3  react-router-dom 을 이용하여 네비게이션을 만들 수 있다.npm i react-router-dom자세한 것은 react-router-dom에서 알아보자.참고  노마드 코더 youtube">
+<link rel="canonical" href="http://localhost:4000/2020/02/28/react-study-3.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -286,69 +286,36 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>react 1</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>react 3</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Github에서 확인하기"
-            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-02-25-react-study-1.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="react 1"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-02-28-react-study-3.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="react 3"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=react">react</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=study">study</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 25일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-25T00:00:00+09:00">
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 28일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-28T00:00:00+09:00">
     <meta itemprop="keywords" content="react,study"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><h2 id="기본-react-1">기본 react 1</h2>
+<div class="article__content" itemprop="articleBody"><h2 id="기본-react-3">기본 react 3</h2>
 
-<p>react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.</p>
+<blockquote>
+  <p><strong>react-router-dom</strong> 을 이용하여 네비게이션을 만들 수 있다.</p>
+</blockquote>
 
-<p><strong>모든 요소는 component이다.</strong>
-and component는 반드시 대분자로 시작해야 한다 !</p>
+<p><code class="highlighter-rouge">npm i react-router-dom</code></p>
 
-<p>react는 component를 가져와서 브라우저가 이해할 수 있는 형태의 html 코드로 만든다.</p>
-
-<p><strong>react application은 한번에  하나의 component만 rendering할 수 있다.</strong></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">App</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">));</span>
-</code></pre></div></div>
-
-<p>처럼 하나만 렌더링 가능 ! 하므로 가장 큰 DOM인 App 안에 다른 것들이 들어가야 한다.</p>
-
-<h4 id="component는-재사용-가능하다-또한-component-간에-정보를-주고받을-수-있다"><strong>component는 재사용 가능하다</strong> 또한, <strong>component 간에 정보를 주고받을 수 있다</strong></h4>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">Animal</span> <span class="nx">type</span><span class="o">=</span><span class="dl">"</span><span class="s2">dog</span><span class="dl">"</span> <span class="nx">legs</span><span class="o">=</span><span class="mi">4</span> <span class="o">&gt;</span> <span class="c1">// Animal 컴포넌트에 type이라는 속성의 값으로 dog를 넘겨준 것.</span>
-</code></pre></div></div>
-
-<p>이러한 속성들은 <strong>props</strong>라고 부른다.
-props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는 <strong>하나의 object로 묶어서 argument로 받는다.</strong></p>
-
-<p>이는 각각 받을 수 있다 ! (ES6)</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Animal</span><span class="p">(</span><span class="nx">param</span><span class="p">){</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">param</span><span class="p">)</span> <span class="c1">// {type = "dog", legs = 4}</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">type</span> <span class="nx">is</span> <span class="p">{</span><span class="nx">param</span><span class="p">.</span><span class="nx">type</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span><span class="p">}</span>
-</code></pre></div></div>
-<p>를 아래와 같이 쓸 수 있다</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Animal</span><span class="p">({</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">legs</span> <span class="p">}){</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="c1">// dog</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">legs</span><span class="p">)</span> <span class="c1">// 4</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">type</span> <span class="nx">is</span> <span class="p">{</span><span class="nx">type</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span><span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>javascript는 중괄호’{}’로 묶는다</strong></p>
-
-<p><strong>component의 key는 unique해야 한다. -&gt; parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자.</strong></p>
+<p>자세한 것은 <a href="https://www.npmjs.com/package/react-router-dom">react-router-dom</a>에서 알아보자.</p>
 
 <h3 id="참고">참고</h3>
 <ul>
   <li><a href="https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ">노마드 코더 youtube</a></li>
 </ul>
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-25T00:00:00+09:00"><!-- start custom article footer snippet -->
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-28T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">구독하기</a></div>
@@ -359,7 +326,7 @@ props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/24/vim-cheet.html">vi 단축키</a></div><div class="next"><span>다음</span><a href="/2020/02/26/react-study-2.html">react 2</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/28/react-hook.html">react Hooks 리액트 훅</a></div></div></div>
 
 </div>
 
