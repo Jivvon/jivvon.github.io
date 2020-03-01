@@ -1,5 +1,5 @@
 ---
-title: react 2
+title: [React] 2
 tags: react study
 ---
 
