@@ -1,5 +1,5 @@
 ---
-title: [React] babel 알아보기
+title: React babel 알아보기
 tags: react study babel es6 es7
 ---
 

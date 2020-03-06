@@ -1,5 +1,5 @@
 ---
-title: [React] life cycle 라이프사이클
+title: React life cycle 라이프사이클
 tags: React study life-cycle lifecycle 라이프사이클
 ---
 

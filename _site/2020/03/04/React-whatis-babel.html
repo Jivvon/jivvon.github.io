@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>React 2 - Jivvlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>React babel 알아보기 - Jivvlog</title>
 
-<meta name="description" content="기본 react 2  prop-types 를 이용하여 props의 데이터 유효성을 검증할 수 있다.npm i prop-typesAnimal.propTypes = {    type: PropTypes.string.isRequired,    legs: PropTypes.number.i...">
-<link rel="canonical" href="http://localhost:4000/2020/02/26/react-study-2.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.babel-polyfillbabel-polyfill이 없다면 babel은 브라우저에서 실행되지 ...">
+<link rel="canonical" href="http://localhost:4000/2020/03/04/React-whatis-babel.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -286,120 +286,44 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>React 2</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>React babel 알아보기</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Github에서 확인하기"
-            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-02-26-react-study-2.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="React 2"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-03-04-[React] whatis-babel.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="React babel 알아보기"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=react">react</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=study">study</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 26일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-26T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=babel">babel</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es6">es6</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es7">es7</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,study,babel,es6,es7"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><h2 id="기본-react-2">기본 react 2</h2>
+<div class="article__content" itemprop="articleBody"><p>babel은 <strong>컴파일러</strong>다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.</p>
 
-<blockquote>
-  <p><strong>prop-types</strong> 를 이용하여 props의 데이터 유효성을 검증할 수 있다.</p>
-</blockquote>
+<h3 id="babel-polyfill">babel-polyfill</h3>
 
-<p><code class="highlighter-rouge">npm i prop-types</code></p>
+<p>babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Animal</span><span class="p">.</span><span class="nx">propTypes</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">type</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">isRequired</span><span class="p">,</span>
-    <span class="na">legs</span><span class="p">:</span> <span class="nx">PropTypes</span><span class="p">.</span><span class="nx">number</span><span class="p">.</span><span class="nx">isRequired</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<h3 id="babelrc">.babelrc</h3>
 
-<p>자세한 것은 <a href="https://www.npmjs.com/package/prop-types">prop-types</a>에서 알아보자.</p>
+<p>.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 react 문법을 모아놓은 react preset이 있다.</p>
 
-<h3 id="class-component">class component</h3>
+<h3 id="babel-cli">babel-cli</h3>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Animal</span><span class="p">({</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">legs</span> <span class="p">}){</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="c1">// dog</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">legs</span><span class="p">)</span> <span class="c1">// 4</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">type</span> <span class="nx">is</span> <span class="p">{</span><span class="nx">type</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span><span class="p">}</span>
-</code></pre></div></div>
-
-<p>위는 function component이다. 이를 class component로 바꾸면</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="p">{</span>
-    <span class="nx">render</span><span class="p">(){</span>
-        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="k">this</span> <span class="nx">is</span> <span class="nx">a</span> <span class="kd">class</span> <span class="nx">component</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>이 된다.</p>
-
-<h4 id="react는-모든-class-component-안의-render-함수를-실행한다">react는 모든 class component 안의 render() 함수를 실행한다.</h4>
-
-<p><strong>class component와 function component의 차이가 쉽게 설명되어있다</strong> : <a href="https://overreacted.io/ko/how-are-function-components-different-from-classes/">여기</a></p>
-
-<blockquote>
-  <p>핵심은 class component는 function component와 다르게 말 그대로 ‘클래스’이기 때문에 파라미터를 받지 못한다. 따라서 부모로부터 넘겨지는 데이터를 <strong>this.props</strong>로 받을 수 있는데, 여기서 this가 바뀔 수 있기 때문에 이를 클로저로 감싸줘야 한다는 것이다.</p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">props</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span> <span class="c1">// 렌더링 될 때의 props</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">props</span> <span class="k">in</span> <span class="nx">closure</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>React.Component를 확장하면 state를 사용할 수 있다. state는 <strong>데이터를 동적으로 다룰 수 있다.</strong> 즉, component의 data를 바꿀 수 있다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-    <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="na">test</span><span class="p">:</span> <span class="mi">0</span>
-    <span class="p">}</span>
-    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">dynamic</span> <span class="nx">data</span> <span class="nx">test</span> <span class="p">:</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">test</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>react에서 state를 변경할 때에는 state를 직접 변경하지 않고 반드시 setState를 사용해야 한다. why? <strong>state를 직접 변경한다면 rerendering을 하지 않기 때문.</strong> 즉, setState를 사용한다면, react는 state를 변경 후 render 함수를 다시 호출할 것이다.</p>
-
-<p>render 함수를 매번 호출한다면 성능상의 문제가 생기지 않을까 ? 는 no. <strong>react는 Virtual DOM이 있기 때문에 여기서 변경된 부분만 화면에 표출한다.</strong></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-    <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="nx">count</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="p">}</span>
-    <span class="nx">add</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="nx">curState</span> <span class="o">=&gt;</span> <span class="p">({</span> <span class="na">count</span><span class="p">:</span> <span class="nx">curState</span><span class="p">.</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}))</span>
-    <span class="p">}</span>
-    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">click</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
-</span>    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>+) button 태그의 onclick 속성에서 메소드는 다음과 같이 사용한다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Animal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-    <span class="nx">func</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">func</span><span class="dl">"</span><span class="p">)}</span>
-    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-        <span class="cm">/*
-            this.func은 클릭할 때마다 실행
-            this.func()은 렌더링 되자마자 실행
-        */</span>
-        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">func</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">click</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
-</span>    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="참고">참고</h3>
-<ul>
-  <li><a href="https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ">노마드 코더 youtube</a></li>
-</ul>
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-26T00:00:00+09:00"><!-- start custom article footer snippet -->
+<p>babel을 직접 빌드할 때 사용하는 babel-cli. 보통은 webpack을 사용한다.</p>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-03-04T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">구독하기</a></div>
@@ -410,7 +334,7 @@
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/25/react-study-1.html">React 1</a></div><div class="next"><span>다음</span><a href="/2020/02/27/react-study-life-cycle.html">React life cycle 라이프사이클</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/28/react-study-3.html">React 3</a></div><div class="next"><span>다음</span><a href="/2020/03/04/npm-install-options.html">--save 와 --save-dev</a></div></div></div>
 
 </div>
 

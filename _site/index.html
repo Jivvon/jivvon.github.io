@@ -287,7 +287,101 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>홈</h1></header><meta itemprop="headline" content="홈"><meta itemprop="author" content="Jiwon Jeong"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/28/react-study-3.html"><h2 itemprop="headline" class="item__header">react 3</h2></a></header>
+          <header><a href="/2020/03/05/Redux-redux-1.html"><h2 itemprop="headline" class="item__header">Redux 정리</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">액션 (Action)
+
+액션 객체는 반드시 type 필드를 가져야 한다.
+
+액션 생성함수 (Action Creator)
+
+액션 객체를 만드는 함수이다. 파라미터를 payload로 통일하기도 한다.
+
+Reducer
+
+리듀서는 변화를 일으키는 함수이다. 파라미터는 (state, action) 두 개이다.
+
+Store
+
+스토어 안에는 현재의 앱 상태와, 리듀서와, 몇가지 내장 함수들이 있다.
+
+dispatch
+
+스토어의 내장 함수 중 하나이며, 액션을 발생시킨다. dispatch에는 액션을 파라미터로 전달한다.
+
+스토어는 reducer 함수를 실행시켜 해당 액션을 통해 새로운 상태를 만든다.
+
+subscribe
+
+함수 ...</div><p><a href="/2020/03/05/Redux-redux-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=redux">redux</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">상태관리</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 05일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-05T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,redux,상태관리"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/03/04/npm-install-options.html"><h2 itemprop="headline" class="item__header">--save 와 --save-dev</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">–save
+
+
+  plugin이 ./node_modules에 설치되고 package.json 내의 dependencies에 추가된다. 
+–production 빌드시 해당 plugin이 포함되지 않는다.
+
+
+–save-dev
+
+
+  plugin이 ./node_modules에 설치되고 package.json 내의 decDependencies에 추가된다. 
+–production 빌드시 해당 plugin이 포함되지 않는다.</div><p><a href="/2020/03/04/npm-install-options.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=npm">npm</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=npm-install">npm-install</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=dependencies">dependencies</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=devDependencies">devDependencies</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
+    <meta itemprop="keywords" content="npm,npm-install,dependencies,devDependencies"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/03/04/React-whatis-babel.html"><h2 itemprop="headline" class="item__header">React babel 알아보기</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.
+
+babel-polyfill
+
+babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.
+
+.babelrc
+
+.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 re...</div><p><a href="/2020/03/04/React-whatis-babel.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=study">study</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=babel">babel</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es6">es6</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es7">es7</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,study,babel,es6,es7"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/02/28/react-study-3.html"><h2 itemprop="headline" class="item__header">React 3</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 3
 
 
@@ -310,7 +404,7 @@ npm i react-router-dom
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-28T00:00:00+09:00">
     <meta itemprop="keywords" content="react,study"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/28/react-hook.html"><h2 itemprop="headline" class="item__header">react Hooks 리액트 훅</h2></a></header>
+          <header><a href="/2020/02/28/react-hook.html"><h2 itemprop="headline" class="item__header">React Hooks 리액트 훅</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !)
 
 useState
@@ -383,7 +477,7 @@ componentWillUnmount : ...</div><p><a href="/2020/02/27/react-study-life-cycle.h
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-27T00:00:00+09:00">
     <meta itemprop="keywords" content="React,study,life-cycle,lifecycle,라이프사이클"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/26/react-study-2.html"><h2 itemprop="headline" class="item__header">react 2</h2></a></header>
+          <header><a href="/2020/02/26/react-study-2.html"><h2 itemprop="headline" class="item__header">React 2</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 2
 
 
@@ -415,7 +509,7 @@ function Animal({ type, legs }){
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-26T00:00:00+09:00">
     <meta itemprop="keywords" content="react,study"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/25/react-study-1.html"><h2 itemprop="headline" class="item__header">react 1</h2></a></header>
+          <header><a href="/2020/02/25/react-study-1.html"><h2 itemprop="headline" class="item__header">React 1</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 1
 
 react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.
@@ -439,113 +533,8 @@ ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 25일</span>
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-25T00:00:00+09:00">
     <meta itemprop="keywords" content="react,study"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/24/vim-cheet.html"><h2 itemprop="headline" class="item__header">vi 단축키</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Vim Cheat Sheet
-
-전역
-
-
-  :help keyword - keyword에 대한 도움말 열기
-  :saveas file - file로 저장하기
-  :close - 현재 영역 닫기
-  K - 커서가 위치한 단어에 대한 맨페이지 열기
-
-
-커서 이동
-
-
-  h - 왼쪽으로 이동
-  j - 아래로 이동
-  k - 위로 이동
-  l - 오른쪽으로 이동
-  H - 화면 상단으로 이동
-  M - 화면 중간으로 이동
-  L - 화면 하단으로 이동
-  w - 다음 단어 시작으로 점프
-  W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다)
-  e - 다음 단어 끝으로 점프
-  E -...</div><p><a href="/2020/02/24/vim-cheet.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=vi">vi</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=vim">vim</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=vi_cheet">vi_cheet</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=vim_cheet">vim_cheet</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=cheet">cheet</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 24일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-24T00:00:00+09:00">
-    <meta itemprop="keywords" content="vi,vim,vi_cheet,vim_cheet,cheet"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/24/codepen-timetable.html"><h2 itemprop="headline" class="item__header">codepen timetable</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody"></div><p><a href="/2020/02/24/codepen-timetable.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EC%8B%9C%EA%B0%84%ED%91%9C">시간표</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%ED%83%80%EC%9E%84%ED%85%8C%EC%9D%B4%EB%B8%94">타임테이블</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=timetable">timetable</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 24일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-24T00:00:00+09:00">
-    <meta itemprop="keywords" content="시간표,타임테이블,timetable"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2019/08/08/startup-mentoring.html"><h2 itemprop="headline" class="item__header">농림축산식품 공공 및 빅데이터 활용 창업경진대회 멘토링 결과</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">주요 변경 기능
-
-
-  사용자 로그인 -&gt; 카카오
-  API 요청
-    
-      동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록)
-      대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서)
-    
-  
-
-
-
-
-TODO
-
-
-  DB 변경
-    
-      hospital_tb
-        
-          기존 user_tb
-          계좌번호 + 은행명
-        
-      
-      pet_info_tb
-        
-          반려동물 key - 일련번호...</div><p><a href="/2019/08/08/startup-mentoring.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EB%86%8D%EB%A6%BC%EC%B6%95%EC%82%B0%EC%8B%9D%ED%92%88%EB%B6%80">농림축산식품부</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EB%86%8D%EC%A0%95%EC%9B%90">농정원</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EC%B0%BD%EC%97%85%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C">창업경진대회</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0">빅데이터</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0">공공데이터</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2019년 08월 08일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2019-08-08T00:00:00+09:00">
-    <meta itemprop="keywords" content="농림축산식품부,농정원,창업경진대회,빅데이터,공공데이터"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>전체 글 9개, 2 페이지</p>
+</div><div class="layout--home"><div class="pagination"><p>전체 글 12개, 2 페이지</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
             <i class="fas fa-angle-left"></i>

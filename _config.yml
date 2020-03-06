@@ -32,7 +32,7 @@ timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_tim
 author: 
   type: person # "person" (default), "organization"
   name: Jiwon Jeong
-  url:
+  url: 
   avatar: # path or url of avatar image (square)
   bio: Chungnam National University
   email: poiu8944@gmail.com

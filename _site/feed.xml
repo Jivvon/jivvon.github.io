@@ -1,5 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-02-29T01:10:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
-</subtitle><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><entry><title type="html">react Hooks 리액트 훅</title><link href="http://localhost:4000/2020/02/28/react-hook.html" rel="alternate" type="text/html" title="react Hooks 리액트 훅" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/react-hook</id><content type="html" xml:base="http://localhost:4000/2020/02/28/react-hook.html">&lt;p&gt;React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2020-03-06T21:58:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jivvlog</title><subtitle>records my study stories such
+</subtitle><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><entry><title type="html">Redux 정리</title><link href="http://localhost:4000/2020/03/05/Redux-redux-1.html" rel="alternate" type="text/html" title="Redux 정리" /><published>2020-03-05T00:00:00+09:00</published><updated>2020-03-05T00:00:00+09:00</updated><id>http://localhost:4000/2020/03/05/%5BRedux%5D-redux-1</id><content type="html" xml:base="http://localhost:4000/2020/03/05/Redux-redux-1.html">&lt;h3 id=&quot;액션-action&quot;&gt;액션 (Action)&lt;/h3&gt;
+
+&lt;p&gt;액션 객체는 &lt;strong&gt;반드시 &lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt; 필드를 가져야 한다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;액션-생성함수-action-creator&quot;&gt;액션 생성함수 (Action Creator)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;액션 객체를 만드는 함수&lt;/strong&gt;이다. 파라미터를 &lt;em&gt;payload&lt;/em&gt;로 통일하기도 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;reducer&quot;&gt;Reducer&lt;/h3&gt;
+
+&lt;p&gt;리듀서는 &lt;strong&gt;변화를 일으키는 함수&lt;/strong&gt;이다. 파라미터는 &lt;strong&gt;(state, action)&lt;/strong&gt; 두 개이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;store&quot;&gt;Store&lt;/h3&gt;
+
+&lt;p&gt;스토어 안에는 현재의 앱 상태와, 리듀서와, 몇가지 내장 함수들이 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;dispatch&quot;&gt;dispatch&lt;/h3&gt;
+
+&lt;p&gt;스토어의 내장 함수 중 하나이며, &lt;strong&gt;액션을 발생&lt;/strong&gt;시킨다. dispatch에는 액션을 파라미터로 전달한다.&lt;/p&gt;
+
+&lt;p&gt;스토어는 reducer 함수를 실행시켜 해당 액션을 통해 새로운 상태를 만든다.&lt;/p&gt;
+
+&lt;h3 id=&quot;subscribe&quot;&gt;subscribe&lt;/h3&gt;
+
+&lt;p&gt;함수 형태의 값을 파라미터로 받아와, 액션이 디스패치 되었을 때마다 전달된 함수가 호출된다. (react와 함께 사용하면 react-redux가 알아서 처리해주기 때문에 대부분 쓸 일이 없다.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;vue 의 vuex와 굉장히 유사하다.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;vuex에는 state, mutation, actions가 있고, &lt;br /&gt;redux에는 state, action, reducer이 있다.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="redux" /><category term="상태관리" /><summary type="html">액션 (Action) 액션 객체는 반드시 type 필드를 가져야 한다. 액션 생성함수 (Action Creator) 액션 객체를 만드는 함수이다. 파라미터를 payload로 통일하기도 한다. Reducer 리듀서는 변화를 일으키는 함수이다. 파라미터는 (state, action) 두 개이다. Store 스토어 안에는 현재의 앱 상태와, 리듀서와, 몇가지 내장 함수들이 있다. dispatch 스토어의 내장 함수 중 하나이며, 액션을 발생시킨다. dispatch에는 액션을 파라미터로 전달한다. 스토어는 reducer 함수를 실행시켜 해당 액션을 통해 새로운 상태를 만든다. subscribe 함수 형태의 값을 파라미터로 받아와, 액션이 디스패치 되었을 때마다 전달된 함수가 호출된다. (react와 함께 사용하면 react-redux가 알아서 처리해주기 때문에 대부분 쓸 일이 없다.) vue 의 vuex와 굉장히 유사하다. vuex에는 state, mutation, actions가 있고, redux에는 state, action, reducer이 있다.</summary></entry><entry><title type="html">–save 와 –save-dev</title><link href="http://localhost:4000/2020/03/04/npm-install-options.html" rel="alternate" type="text/html" title="--save 와 --save-dev" /><published>2020-03-04T00:00:00+09:00</published><updated>2020-03-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/03/04/npm-install-options</id><content type="html" xml:base="http://localhost:4000/2020/03/04/npm-install-options.html">&lt;h3 id=&quot;save&quot;&gt;–save&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;plugin이 ./node_modules에 설치되고 package.json 내의 &lt;em&gt;dependencies&lt;/em&gt;에 추가된다.&lt;br /&gt; 
+&lt;em&gt;–production&lt;/em&gt; 빌드시 해당 plugin이 &lt;strong&gt;포함되지 않는다&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;save-dev&quot;&gt;–save-dev&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;plugin이 ./node_modules에 설치되고 package.json 내의 &lt;em&gt;decDependencies&lt;/em&gt;에 추가된다.&lt;br /&gt; 
+&lt;em&gt;–production&lt;/em&gt; 빌드시 해당 plugin이 &lt;strong&gt;포함되지 않는다&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="npm" /><category term="npm-install" /><category term="dependencies" /><category term="devDependencies" /><summary type="html">–save plugin이 ./node_modules에 설치되고 package.json 내의 dependencies에 추가된다. –production 빌드시 해당 plugin이 포함되지 않는다. –save-dev plugin이 ./node_modules에 설치되고 package.json 내의 decDependencies에 추가된다. –production 빌드시 해당 plugin이 포함되지 않는다.</summary></entry><entry><title type="html">React babel 알아보기</title><link href="http://localhost:4000/2020/03/04/React-whatis-babel.html" rel="alternate" type="text/html" title="React babel 알아보기" /><published>2020-03-04T00:00:00+09:00</published><updated>2020-03-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/03/04/%5BReact%5D%20whatis-babel</id><content type="html" xml:base="http://localhost:4000/2020/03/04/React-whatis-babel.html">&lt;p&gt;babel은 &lt;strong&gt;컴파일러&lt;/strong&gt;다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;babel-polyfill&quot;&gt;babel-polyfill&lt;/h3&gt;
+
+&lt;p&gt;babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.&lt;/p&gt;
+
+&lt;h3 id=&quot;babelrc&quot;&gt;.babelrc&lt;/h3&gt;
+
+&lt;p&gt;.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 react 문법을 모아놓은 react preset이 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;babel-cli&quot;&gt;babel-cli&lt;/h3&gt;
+
+&lt;p&gt;babel을 직접 빌드할 때 사용하는 babel-cli. 보통은 webpack을 사용한다.&lt;/p&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><category term="babel" /><category term="es6" /><category term="es7" /><summary type="html">babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다. babel-polyfill babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다. .babelrc .babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 react 문법을 모아놓은 react preset이 있다. babel-cli babel을 직접 빌드할 때 사용하는 babel-cli. 보통은 webpack을 사용한다.</summary></entry><entry><title type="html">React 3</title><link href="http://localhost:4000/2020/02/28/react-study-3.html" rel="alternate" type="text/html" title="React 3" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/react-study-3</id><content type="html" xml:base="http://localhost:4000/2020/02/28/react-study-3.html">&lt;h2 id=&quot;기본-react-3&quot;&gt;기본 react 3&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;react-router-dom&lt;/strong&gt; 을 이용하여 네비게이션을 만들 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm i react-router-dom&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;자세한 것은 &lt;a href=&quot;https://www.npmjs.com/package/react-router-dom&quot;&gt;react-router-dom&lt;/a&gt;에서 알아보자.&lt;/p&gt;
+
+&lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ&quot;&gt;노마드 코더 youtube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 3 react-router-dom 을 이용하여 네비게이션을 만들 수 있다. npm i react-router-dom 자세한 것은 react-router-dom에서 알아보자. 참고 노마드 코더 youtube</summary></entry><entry><title type="html">React Hooks 리액트 훅</title><link href="http://localhost:4000/2020/02/28/react-hook.html" rel="alternate" type="text/html" title="React Hooks 리액트 훅" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/react-hook</id><content type="html" xml:base="http://localhost:4000/2020/02/28/react-hook.html">&lt;p&gt;React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !)&lt;/p&gt;
 
 &lt;h3 id=&quot;usestate&quot;&gt;useState&lt;/h3&gt;
 
@@ -92,20 +160,7 @@
 &lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ&quot;&gt;노마드 코더 youtube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><category term="hooks" /><category term="react-hooks" /><summary type="html">React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !) useState const App = () =&amp;gt; { const [count, setCount] = useState(0); // 배열 [value, value를 변경하는 함수] 를 반환 const [email, setEmail] = useState(&quot;&quot;); const updateEmail = e =&amp;gt; { const { target: { value } } = e; setEmail(value); }; return ( &amp;lt;&amp;gt; &amp;lt;div&amp;gt;{count}&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;{email}&amp;lt;/div&amp;gt; &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt;Increment&amp;lt;/button&amp;gt; &amp;lt;input placeholder=&quot;Email&quot; value={email} onChange={updateEmail} /&amp;gt; &amp;lt;/&amp;gt; ); }; useState는 배열 [value, value를 변경하는 함수] 를 반환한다. useEffect useEffect(func, [dependency]) useEffect는 dependency가 바뀔 때마다 func을 호출한다 useRef const inputTag = useRef() setTimeout(() =&amp;gt; inputTag.current.focus(), 5000) &amp;lt;input ref={inputTag} placeholder=&quot;Type here...&quot; /&amp;gt; 모든 react component는 reference 속성을 가지고 있다. useRef는 해당 element를 사용할 수 있게 해준다. (getElementById 처럼 !) Note input 태그 안의 value={name.value} onChange={name.onChange}는 {…name}과 같은 의미이다. &amp;lt;input value={name.value} onChange={name.onChange} placeholder=&quot;Type here&quot; /&amp;gt;&amp;gt; &amp;lt;input {...name} placeholder=&quot;Type here&quot; /&amp;gt;&amp;gt; 다음과 같이 쓸 수 있다 (in JSX only) flag = false {flag &amp;amp;&amp;amp; &amp;lt;span&amp;gt;this is true&amp;lt;/span&amp;gt;} {!flag &amp;amp;&amp;amp; &amp;lt;span&amp;gt;this is false&amp;lt;/span&amp;gt;} modal (popup) 만들기 function clickOutside(f){ const ref = createRef(); const handleClick = e =&amp;gt; { if(!ref.current.contains(e.target)){ f(); } } useEffect(()=&amp;gt;{ document.addEventListener(&quot;click&quot;, handleClick); }, []) // componentDidMount 후 rerender 안 함 return ref; } function App() { const testFunction = () =&amp;gt; { console.log(&quot;test&quot;) } const ref = clickOutside(testFunction); return ( &amp;lt;div className=&quot;App&quot;&amp;gt; &amp;lt;div ref={ref}&amp;gt; &amp;lt;h2&amp;gt;popup&amp;lt;/h2&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; ) } 참고 노마드 코더 youtube</summary></entry><entry><title type="html">react 3</title><link href="http://localhost:4000/2020/02/28/react-study-3.html" rel="alternate" type="text/html" title="react 3" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/react-study-3</id><content type="html" xml:base="http://localhost:4000/2020/02/28/react-study-3.html">&lt;h2 id=&quot;기본-react-3&quot;&gt;기본 react 3&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;react-router-dom&lt;/strong&gt; 을 이용하여 네비게이션을 만들 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm i react-router-dom&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;자세한 것은 &lt;a href=&quot;https://www.npmjs.com/package/react-router-dom&quot;&gt;react-router-dom&lt;/a&gt;에서 알아보자.&lt;/p&gt;
-
-&lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ&quot;&gt;노마드 코더 youtube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 3 react-router-dom 을 이용하여 네비게이션을 만들 수 있다. npm i react-router-dom 자세한 것은 react-router-dom에서 알아보자. 참고 노마드 코더 youtube</summary></entry><entry><title type="html">React life cycle 라이프사이클</title><link href="http://localhost:4000/2020/02/27/react-study-life-cycle.html" rel="alternate" type="text/html" title="React life cycle 라이프사이클" /><published>2020-02-27T00:00:00+09:00</published><updated>2020-02-27T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/27/react-study-life-cycle</id><content type="html" xml:base="http://localhost:4000/2020/02/27/react-study-life-cycle.html">&lt;p&gt;React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 &lt;strong&gt;라이프 사이클 이벤트&lt;/strong&gt;라고 한다.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><category term="hooks" /><category term="react-hooks" /><summary type="html">React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !) useState const App = () =&amp;gt; { const [count, setCount] = useState(0); // 배열 [value, value를 변경하는 함수] 를 반환 const [email, setEmail] = useState(&quot;&quot;); const updateEmail = e =&amp;gt; { const { target: { value } } = e; setEmail(value); }; return ( &amp;lt;&amp;gt; &amp;lt;div&amp;gt;{count}&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;{email}&amp;lt;/div&amp;gt; &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt;Increment&amp;lt;/button&amp;gt; &amp;lt;input placeholder=&quot;Email&quot; value={email} onChange={updateEmail} /&amp;gt; &amp;lt;/&amp;gt; ); }; useState는 배열 [value, value를 변경하는 함수] 를 반환한다. useEffect useEffect(func, [dependency]) useEffect는 dependency가 바뀔 때마다 func을 호출한다 useRef const inputTag = useRef() setTimeout(() =&amp;gt; inputTag.current.focus(), 5000) &amp;lt;input ref={inputTag} placeholder=&quot;Type here...&quot; /&amp;gt; 모든 react component는 reference 속성을 가지고 있다. useRef는 해당 element를 사용할 수 있게 해준다. (getElementById 처럼 !) Note input 태그 안의 value={name.value} onChange={name.onChange}는 {…name}과 같은 의미이다. &amp;lt;input value={name.value} onChange={name.onChange} placeholder=&quot;Type here&quot; /&amp;gt;&amp;gt; &amp;lt;input {...name} placeholder=&quot;Type here&quot; /&amp;gt;&amp;gt; 다음과 같이 쓸 수 있다 (in JSX only) flag = false {flag &amp;amp;&amp;amp; &amp;lt;span&amp;gt;this is true&amp;lt;/span&amp;gt;} {!flag &amp;amp;&amp;amp; &amp;lt;span&amp;gt;this is false&amp;lt;/span&amp;gt;} modal (popup) 만들기 function clickOutside(f){ const ref = createRef(); const handleClick = e =&amp;gt; { if(!ref.current.contains(e.target)){ f(); } } useEffect(()=&amp;gt;{ document.addEventListener(&quot;click&quot;, handleClick); }, []) // componentDidMount 후 rerender 안 함 return ref; } function App() { const testFunction = () =&amp;gt; { console.log(&quot;test&quot;) } const ref = clickOutside(testFunction); return ( &amp;lt;div className=&quot;App&quot;&amp;gt; &amp;lt;div ref={ref}&amp;gt; &amp;lt;h2&amp;gt;popup&amp;lt;/h2&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; ) } 참고 노마드 코더 youtube</summary></entry><entry><title type="html">React life cycle 라이프사이클</title><link href="http://localhost:4000/2020/02/27/react-study-life-cycle.html" rel="alternate" type="text/html" title="React life cycle 라이프사이클" /><published>2020-02-27T00:00:00+09:00</published><updated>2020-02-27T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/27/react-study-life-cycle</id><content type="html" xml:base="http://localhost:4000/2020/02/27/react-study-life-cycle.html">&lt;p&gt;React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 &lt;strong&gt;라이프 사이클 이벤트&lt;/strong&gt;라고 한다.&lt;/p&gt;
 
 &lt;p&gt;라이프사이클마다 주로 사용되는 메소드만 정리하였다. 각 메소드는 반드시 
 &lt;strong&gt;&lt;span style=&quot;color:red&quot;&gt;순서대로 실행&lt;/span&gt;&lt;/strong&gt;된다.&lt;/p&gt;
@@ -127,7 +182,7 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. componentWillUnmount()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;componentWillUnmount : Timer, async API를 제거한다.&lt;/p&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="React" /><category term="study" /><category term="life-cycle" /><category term="lifecycle" /><category term="라이프사이클" /><summary type="html">React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 라이프 사이클 이벤트라고 한다. 라이프사이클마다 주로 사용되는 메소드만 정리하였다. 각 메소드는 반드시 순서대로 실행된다. mounting 1. constructor() 2. render() 3. componentDidMount() componentDidMount : AJAX, Timer를 주로 작성한다. updating 1. render() 2. componentDidUpdate() unmounting 1. componentWillUnmount() componentWillUnmount : Timer, async API를 제거한다.</summary></entry><entry><title type="html">react 2</title><link href="http://localhost:4000/2020/02/26/react-study-2.html" rel="alternate" type="text/html" title="react 2" /><published>2020-02-26T00:00:00+09:00</published><updated>2020-02-26T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/26/react-study-2</id><content type="html" xml:base="http://localhost:4000/2020/02/26/react-study-2.html">&lt;h2 id=&quot;기본-react-2&quot;&gt;기본 react 2&lt;/h2&gt;
+&lt;p&gt;componentWillUnmount : Timer, async API를 제거한다.&lt;/p&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="React" /><category term="study" /><category term="life-cycle" /><category term="lifecycle" /><category term="라이프사이클" /><summary type="html">React의 component는 Life cycle은 가지는데, 특정 시점에 호출되는 메서드가 있다. 이를 라이프 사이클 이벤트라고 한다. 라이프사이클마다 주로 사용되는 메소드만 정리하였다. 각 메소드는 반드시 순서대로 실행된다. mounting 1. constructor() 2. render() 3. componentDidMount() componentDidMount : AJAX, Timer를 주로 작성한다. updating 1. render() 2. componentDidUpdate() unmounting 1. componentWillUnmount() componentWillUnmount : Timer, async API를 제거한다.</summary></entry><entry><title type="html">React 2</title><link href="http://localhost:4000/2020/02/26/react-study-2.html" rel="alternate" type="text/html" title="React 2" /><published>2020-02-26T00:00:00+09:00</published><updated>2020-02-26T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/26/react-study-2</id><content type="html" xml:base="http://localhost:4000/2020/02/26/react-study-2.html">&lt;h2 id=&quot;기본-react-2&quot;&gt;기본 react 2&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;prop-types&lt;/strong&gt; 를 이용하여 props의 데이터 유효성을 검증할 수 있다.&lt;/p&gt;
@@ -224,7 +279,7 @@
 &lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ&quot;&gt;노마드 코더 youtube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 2 prop-types 를 이용하여 props의 데이터 유효성을 검증할 수 있다. npm i prop-types Animal.propTypes = { type: PropTypes.string.isRequired, legs: PropTypes.number.isRequired } 자세한 것은 prop-types에서 알아보자. class component function Animal({ type, legs }){ console.log(type) // dog console.log(legs) // 4 return &amp;lt;div&amp;gt;type is {type}&amp;lt;/div&amp;gt; } 위는 function component이다. 이를 class component로 바꾸면 class Animal extends React.Component{ render(){ return &amp;lt;div&amp;gt;this is a class component&amp;lt;/div&amp;gt; } } 이 된다. react는 모든 class component 안의 render() 함수를 실행한다. class component와 function component의 차이가 쉽게 설명되어있다 : 여기 핵심은 class component는 function component와 다르게 말 그대로 ‘클래스’이기 때문에 파라미터를 받지 못한다. 따라서 부모로부터 넘겨지는 데이터를 this.props로 받을 수 있는데, 여기서 this가 바뀔 수 있기 때문에 이를 클로저로 감싸줘야 한다는 것이다. class Animal extends React.Component { render() { const props = this.props; // 렌더링 될 때의 props return &amp;lt;div&amp;gt;props in closure&amp;lt;/div&amp;gt; } } React.Component를 확장하면 state를 사용할 수 있다. state는 데이터를 동적으로 다룰 수 있다. 즉, component의 data를 바꿀 수 있다. class Animal extends React.Component { state = { test: 0 } render() { return &amp;lt;div&amp;gt;dynamic data test : {this.state.test}&amp;lt;/div&amp;gt; } } react에서 state를 변경할 때에는 state를 직접 변경하지 않고 반드시 setState를 사용해야 한다. why? state를 직접 변경한다면 rerendering을 하지 않기 때문. 즉, setState를 사용한다면, react는 state를 변경 후 render 함수를 다시 호출할 것이다. render 함수를 매번 호출한다면 성능상의 문제가 생기지 않을까 ? 는 no. react는 Virtual DOM이 있기 때문에 여기서 변경된 부분만 화면에 표출한다. class Animal extends React.Component { state = { count = 1 } add = () =&amp;gt; { this.setState(curState =&amp;gt; ({ count: curState.count + 1 })) } render() { return &amp;lt;button onClick={this.add}&amp;gt;click&amp;lt;/button&amp;gt; } } +) button 태그의 onclick 속성에서 메소드는 다음과 같이 사용한다. class Animal extends React.Component { func = () =&amp;gt; {console.log(&quot;func&quot;)} render() { /* this.func은 클릭할 때마다 실행 this.func()은 렌더링 되자마자 실행 */ return &amp;lt;button onClick={this.func}&amp;gt;click&amp;lt;/button&amp;gt; } } 참고 노마드 코더 youtube</summary></entry><entry><title type="html">react 1</title><link href="http://localhost:4000/2020/02/25/react-study-1.html" rel="alternate" type="text/html" title="react 1" /><published>2020-02-25T00:00:00+09:00</published><updated>2020-02-25T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/25/react-study-1</id><content type="html" xml:base="http://localhost:4000/2020/02/25/react-study-1.html">&lt;h2 id=&quot;기본-react-1&quot;&gt;기본 react 1&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 2 prop-types 를 이용하여 props의 데이터 유효성을 검증할 수 있다. npm i prop-types Animal.propTypes = { type: PropTypes.string.isRequired, legs: PropTypes.number.isRequired } 자세한 것은 prop-types에서 알아보자. class component function Animal({ type, legs }){ console.log(type) // dog console.log(legs) // 4 return &amp;lt;div&amp;gt;type is {type}&amp;lt;/div&amp;gt; } 위는 function component이다. 이를 class component로 바꾸면 class Animal extends React.Component{ render(){ return &amp;lt;div&amp;gt;this is a class component&amp;lt;/div&amp;gt; } } 이 된다. react는 모든 class component 안의 render() 함수를 실행한다. class component와 function component의 차이가 쉽게 설명되어있다 : 여기 핵심은 class component는 function component와 다르게 말 그대로 ‘클래스’이기 때문에 파라미터를 받지 못한다. 따라서 부모로부터 넘겨지는 데이터를 this.props로 받을 수 있는데, 여기서 this가 바뀔 수 있기 때문에 이를 클로저로 감싸줘야 한다는 것이다. class Animal extends React.Component { render() { const props = this.props; // 렌더링 될 때의 props return &amp;lt;div&amp;gt;props in closure&amp;lt;/div&amp;gt; } } React.Component를 확장하면 state를 사용할 수 있다. state는 데이터를 동적으로 다룰 수 있다. 즉, component의 data를 바꿀 수 있다. class Animal extends React.Component { state = { test: 0 } render() { return &amp;lt;div&amp;gt;dynamic data test : {this.state.test}&amp;lt;/div&amp;gt; } } react에서 state를 변경할 때에는 state를 직접 변경하지 않고 반드시 setState를 사용해야 한다. why? state를 직접 변경한다면 rerendering을 하지 않기 때문. 즉, setState를 사용한다면, react는 state를 변경 후 render 함수를 다시 호출할 것이다. render 함수를 매번 호출한다면 성능상의 문제가 생기지 않을까 ? 는 no. react는 Virtual DOM이 있기 때문에 여기서 변경된 부분만 화면에 표출한다. class Animal extends React.Component { state = { count = 1 } add = () =&amp;gt; { this.setState(curState =&amp;gt; ({ count: curState.count + 1 })) } render() { return &amp;lt;button onClick={this.add}&amp;gt;click&amp;lt;/button&amp;gt; } } +) button 태그의 onclick 속성에서 메소드는 다음과 같이 사용한다. class Animal extends React.Component { func = () =&amp;gt; {console.log(&quot;func&quot;)} render() { /* this.func은 클릭할 때마다 실행 this.func()은 렌더링 되자마자 실행 */ return &amp;lt;button onClick={this.func}&amp;gt;click&amp;lt;/button&amp;gt; } } 참고 노마드 코더 youtube</summary></entry><entry><title type="html">React 1</title><link href="http://localhost:4000/2020/02/25/react-study-1.html" rel="alternate" type="text/html" title="React 1" /><published>2020-02-25T00:00:00+09:00</published><updated>2020-02-25T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/25/react-study-1</id><content type="html" xml:base="http://localhost:4000/2020/02/25/react-study-1.html">&lt;h2 id=&quot;기본-react-1&quot;&gt;기본 react 1&lt;/h2&gt;
 
 &lt;p&gt;react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.&lt;/p&gt;
 
@@ -270,10 +325,7 @@ props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는
 &lt;h3 id=&quot;참고&quot;&gt;참고&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ&quot;&gt;노마드 코더 youtube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 1 react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다. 모든 요소는 component이다. and component는 반드시 대분자로 시작해야 한다 ! react는 component를 가져와서 브라우저가 이해할 수 있는 형태의 html 코드로 만든다. react application은 한번에 하나의 component만 rendering할 수 있다. ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById('root')); 처럼 하나만 렌더링 가능 ! 하므로 가장 큰 DOM인 App 안에 다른 것들이 들어가야 한다. component는 재사용 가능하다 또한, component 간에 정보를 주고받을 수 있다 &amp;lt;Animal type=&quot;dog&quot; legs=4 &amp;gt; // Animal 컴포넌트에 type이라는 속성의 값으로 dog를 넘겨준 것. 이러한 속성들은 props라고 부른다. props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는 하나의 object로 묶어서 argument로 받는다. 이는 각각 받을 수 있다 ! (ES6) function Animal(param){ console.log(param) // {type = &quot;dog&quot;, legs = 4} return &amp;lt;div&amp;gt;type is {param.type}&amp;lt;/div&amp;gt; } 를 아래와 같이 쓸 수 있다 function Animal({ type, legs }){ console.log(type) // dog console.log(legs) // 4 return &amp;lt;div&amp;gt;type is {type}&amp;lt;/div&amp;gt; } javascript는 중괄호’{}’로 묶는다 component의 key는 unique해야 한다. -&amp;gt; parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자. 참고 노마드 코더 youtube</summary></entry><entry><title type="html">codepen timetable</title><link href="http://localhost:4000/2020/02/24/codepen-timetable.html" rel="alternate" type="text/html" title="codepen timetable" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/codepen-timetable</id><content type="html" xml:base="http://localhost:4000/2020/02/24/codepen-timetable.html">&lt;div&gt;&lt;div class=&quot;extensions extensions--demo&quot;&gt;
-&lt;iframe src=&quot;//codepen.io/markmurray/embed/wImHf/?theme-id=0&amp;amp;default-tab=html,result&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="시간표" /><category term="타임테이블" /><category term="timetable" /><summary type="html"></summary></entry><entry><title type="html">vi 단축키</title><link href="http://localhost:4000/2020/02/24/vim-cheet.html" rel="alternate" type="text/html" title="vi 단축키" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/vim-cheet</id><content type="html" xml:base="http://localhost:4000/2020/02/24/vim-cheet.html">&lt;h1 id=&quot;vim-cheat-sheet&quot;&gt;&lt;a href=&quot;https://vim.rtorr.com/&quot;&gt;Vim Cheat Sheet&lt;/a&gt;&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="react" /><category term="study" /><summary type="html">기본 react 1 react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다. 모든 요소는 component이다. and component는 반드시 대분자로 시작해야 한다 ! react는 component를 가져와서 브라우저가 이해할 수 있는 형태의 html 코드로 만든다. react application은 한번에 하나의 component만 rendering할 수 있다. ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById('root')); 처럼 하나만 렌더링 가능 ! 하므로 가장 큰 DOM인 App 안에 다른 것들이 들어가야 한다. component는 재사용 가능하다 또한, component 간에 정보를 주고받을 수 있다 &amp;lt;Animal type=&quot;dog&quot; legs=4 &amp;gt; // Animal 컴포넌트에 type이라는 속성의 값으로 dog를 넘겨준 것. 이러한 속성들은 props라고 부른다. props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는 하나의 object로 묶어서 argument로 받는다. 이는 각각 받을 수 있다 ! (ES6) function Animal(param){ console.log(param) // {type = &quot;dog&quot;, legs = 4} return &amp;lt;div&amp;gt;type is {param.type}&amp;lt;/div&amp;gt; } 를 아래와 같이 쓸 수 있다 function Animal({ type, legs }){ console.log(type) // dog console.log(legs) // 4 return &amp;lt;div&amp;gt;type is {type}&amp;lt;/div&amp;gt; } javascript는 중괄호’{}’로 묶는다 component의 key는 unique해야 한다. -&amp;gt; parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자. 참고 노마드 코더 youtube</summary></entry><entry><title type="html">vi 단축키</title><link href="http://localhost:4000/2020/02/24/vim-cheet.html" rel="alternate" type="text/html" title="vi 단축키" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/vim-cheet</id><content type="html" xml:base="http://localhost:4000/2020/02/24/vim-cheet.html">&lt;h1 id=&quot;vim-cheat-sheet&quot;&gt;&lt;a href=&quot;https://vim.rtorr.com/&quot;&gt;Vim Cheat Sheet&lt;/a&gt;&lt;/h1&gt;
 
 &lt;h2 id=&quot;전역&quot;&gt;전역&lt;/h2&gt;
 
@@ -503,152 +555,7 @@ props는 여러 개가 될 수 있고, 컴포넌트를 정의하는 곳에서는
   &lt;li&gt;:tabclose or :tabc - 현재 탭과 그 안의 창들 닫기&lt;/li&gt;
   &lt;li&gt;:tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기&lt;/li&gt;
   &lt;li&gt;:tabdo command - 모든 탭에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;command&lt;/code&gt; 실행하기 (예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;:tabdo q&lt;/code&gt; - 열린 모든 탭 닫기)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="vi" /><category term="vim" /><category term="vi_cheet" /><category term="vim_cheet" /><category term="cheet" /><summary type="html">Vim Cheat Sheet 전역 :help keyword - keyword에 대한 도움말 열기 :saveas file - file로 저장하기 :close - 현재 영역 닫기 K - 커서가 위치한 단어에 대한 맨페이지 열기 커서 이동 h - 왼쪽으로 이동 j - 아래로 이동 k - 위로 이동 l - 오른쪽으로 이동 H - 화면 상단으로 이동 M - 화면 중간으로 이동 L - 화면 하단으로 이동 w - 다음 단어 시작으로 점프 W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) e - 다음 단어 끝으로 점프 E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) b - 이전 단어 시작으로 점프 B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) % - 현재 괄호와 맞는 짝의 괄호로 이동 (:h matchpairs를 통해 더 많은 정보를 얻을 수 있다.) 0 - 행의 처음으로 점프 ^ - 행의 시작 문자로 점프 $ - 행의 끝으로 점프 g_ - 행의 끝 문자로 점프 gg - 문서 첫 행으로 점프 G - 문서 마지막 행으로 점프 5G - 5번째 행으로 점프 fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동 tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동 Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동 Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동 ; - 가장 최근의 f, t, F나 T 명령을 다시 실행 , - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행 } - 다음 단락(또는 함수/블록)으로 이동 { - 이전 단락(또는 함수/블록)으로 이동 zz - 커서가 있는 행을 중간으로 하도록 화면 이동 Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동 Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동 Ctrl + b - 한 화면 위로 Ctrl + f - 한 화면 아래로 Ctrl + d - 반 화면 아래로 Ctrl + u - 반 화면 위로 Tip 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동. 삽입 모드 - 택스트 삽입/추가 i - 커서 앞에 삽입 I - 행 시작에 삽입 a - 커서 뒤에 추가 A - 행 끝에 추가 o - 현재 행 아래에 새 행 추가 O - 현재 행 위에 새 행 추가 ea - 단어 끝에 추가 Esc - 삽입 모드 종료 편집 r - 한 글자 바꾸기 J - 현재 행과 다음 행을 연결 gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결 gwip - 단락을 리플로우 cc - 행 전체를 새로 쓰기 C - 행 끝까지를 새로 쓰기 c$ - 행 끝까지를 새로 쓰기 ciw - 단어 전체를 새로 쓰기 cw - 단어 끝까지를 새로 쓰기 s - 한 글자 삭제하고 삽입 모드 시작 S - 행 삭제하고 텍스트 입력 (cc와 동일) xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합) u - 실행 취소 Ctrl + r - 다시 실행 . - 마지막 명령 반복 텍스트 선택 (비주얼 모드) v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사) V - 행 단위 선택 모드 시작 o - 선택 영역의 반대쪽 끝으로 이동 Ctrl + v - 블록 선택 모드 시작 O - 블록의 반대쪽 모서리로 이동 aw - 단어 선택 ab - () 블럭 선택 aB - {} 블럭 선택 ib - () 블럭의 내부 선택 iB - {} 블럭의 내부 선택 Esc - 선택 모드 종료 선택 모드 명령 &amp;gt; - 텍스트를 오른쪽으로 이동 &amp;lt; - 텍스트를 왼쪽으로 이동 y - 선택한 텍스트 복사 d - 선택한 텍스트 삭제 ~ - 대소문자 반전 레지스터 :reg - 레지스터 내용물 표시 “xy - 레지스터 x로 복사 “xp - 레지스터 x의 내용물 붙어넣기 Tip 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임. Tip 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음. 표시 :marks - 표시 항목 표시 ma - 현재 위치를 표시 a로 설정 `a - 표시 a의 위치로 점프 y`a - 표시 a의 위치까지 복사 매크로 qa - 매크로 a 기록 시작 q - 매크로 기록 중지 @a - 매크로 a 실행 @@ - 마지막 실행한 매크로 재실행 잘라내기와 붙여넣기 yy - 행 복사 2yy - 2줄 복사 yw - 커서 위치에서 다음 단어 시작까지 복사 y$ - 행 끝까지 복사 p - 커서 위치 뒤에 붙여넣기 P - 커서 위치 앞에 붙여넣기 dd - 행 잘라내기 2dd - 2줄 잘라내기 dw - 커서 위치에서 다음 단어 시작까지 잘라내기 D - 행 끝까지 잘라내기 d$ - 행 끝까지 잘라내기 x - 한 글자 잘라내기 나가기 :w - 저장하고, 나가지는 않기 :w !sudo tee % - sudo로 현재 파일 저장 :wq or :x or ZZ - 저장하고 나가기 :q - 나가기 (저장하지 않은 변경 사항 있으면 실패) :q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림) :wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기 찾기와 바꾸기 /pattern - 패턴 찾기 ?pattern - 패턴 역방향 찾기 \vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요) n - 같은 방향으로 찾기 반복 N - 반대 방향으로 찾기 반복 :%s/old/new/g - 파일 내 모든 old를 new로 바꾸기 :%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기 :noh - 찾기 강조 표시 없애기 여러 파일에서 찾기 :vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기 e.g.:vimgrep /foo/ */ :cn - 다음 일치 항목으로 점프 :cp - 이전 일치 항목으로 점프 :copen - 일치 목록을 새 창으로 열기 여러 파일 작업 :e file - 새 버퍼에서 파일 편집 :bnext or :bn - 다음 버퍼로 이동 :bprev or :bp - 이전 버퍼로 이동 :bd - 버퍼 삭제 (파일 닫기) :ls - 열린 버퍼 모두 나열 :sp file - 새 버퍼에 파일 열고 상하로 창 분할 :vsp file - 새 버퍼에 파일 열고 좌우로 창 분할 Ctrl + ws - 상하로 창 분할 Ctrl + ww - 창 전환 Ctrl + wq - 창 닫기 Ctrl + wv - 좌우로 창 분할 Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할) Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할) Ctrl + wj - 아래 창으로 이동 (상하 분할) Ctrl + wk - 위 창으로 이동 (상하 분할) 탭 :tabnew or :tabnew file - 새 탭에서 파일 열기 Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동 gt or :tabnext or :tabn - 다음 탭으로 이동 gT or :tabprev or :tabp - 이전 탭으로 이동 #gt - #번 탭으로 이동 :tabmove # - 현재 탭을 #번째로 이동 (0부터 시작) :tabclose or :tabc - 현재 탭과 그 안의 창들 닫기 :tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기 :tabdo command - 모든 탭에서 command 실행하기 (예를 들어, :tabdo q - 열린 모든 탭 닫기)</summary></entry><entry><title type="html">농림축산식품 공공 및 빅데이터 활용 창업경진대회 멘토링 결과</title><link href="http://localhost:4000/2019/08/08/startup-mentoring.html" rel="alternate" type="text/html" title="농림축산식품 공공 및 빅데이터 활용 창업경진대회 멘토링 결과" /><published>2019-08-08T00:00:00+09:00</published><updated>2019-08-08T00:00:00+09:00</updated><id>http://localhost:4000/2019/08/08/startup-mentoring</id><content type="html" xml:base="http://localhost:4000/2019/08/08/startup-mentoring.html">&lt;h2 id=&quot;주요-변경-기능&quot;&gt;주요 변경 기능&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;사용자 로그인 -&amp;gt; 카카오&lt;/li&gt;
-  &lt;li&gt;API 요청
-    &lt;ul&gt;
-      &lt;li&gt;동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&amp;gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록)&lt;/li&gt;
-      &lt;li&gt;대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DB 변경
-    &lt;ul&gt;
-      &lt;li&gt;hospital_tb
-        &lt;ul&gt;
-          &lt;li&gt;기존 user_tb&lt;/li&gt;
-          &lt;li&gt;계좌번호 + 은행명&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;pet_info_tb
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;반려동물 key - 일련번호 (only 내장형)&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;반려동물 정보&lt;/li&gt;
-          &lt;li&gt;&lt;em&gt;주인 key (primary)&lt;/em&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;em&gt;대행업체 key (primary)&lt;/em&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;user_tb(사용자 새로 만들 것)
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;사용자 key&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;사용자 계정 정보 (카카오 계정) - 토큰&lt;/li&gt;
-          &lt;li&gt;닉네임&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;후기_tb
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;후기 index&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;em&gt;병원 key&lt;/em&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;em&gt;사용자 key&lt;/em&gt;&lt;/li&gt;
-          &lt;li&gt;내용&lt;/li&gt;
-          &lt;li&gt;작성일&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;커뮤니티 분류
-        &lt;ul&gt;
-          &lt;li&gt;Q&amp;amp;A&lt;/li&gt;
-          &lt;li&gt;trade&lt;/li&gt;
-          &lt;li&gt;pet_find&lt;/li&gt;
-          &lt;li&gt;pet_sale&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;상품_tb (추후)
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;상품 index&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;상품 이미지&lt;/li&gt;
-          &lt;li&gt;설명&lt;/li&gt;
-          &lt;li&gt;가격&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;서버-변경&quot;&gt;서버 변경&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;url 수정 -&amp;gt; 수정사항 알려주기&lt;/li&gt;
-  &lt;li&gt;라우터 적용&lt;/li&gt;
-  &lt;li&gt;메일보내기 form 만들어서&lt;/li&gt;
-  &lt;li&gt;기능
-    &lt;ul&gt;
-      &lt;li&gt;예약 제거&lt;/li&gt;
-      &lt;li&gt;후기 작성, 수정, 제거&lt;/li&gt;
-      &lt;li&gt;커뮤니티 수정 제거&lt;/li&gt;
-      &lt;li&gt;사용자 회원 탈퇴&lt;/li&gt;
-      &lt;li&gt;병원 회원 탈퇴&lt;/li&gt;
-      &lt;li&gt;반려동물 정보 추가(예약완료 될 때)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;관리자 페이지 대충&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;todo-today&quot;&gt;TODO TODAY&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;라우터 적용&lt;/li&gt;
-  &lt;li&gt;node에서 메일 사용하기&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="농림축산식품부" /><category term="농정원" /><category term="창업경진대회" /><category term="빅데이터" /><category term="공공데이터" /><summary type="html">주요 변경 기능 사용자 로그인 -&amp;gt; 카카오 API 요청 동물등록정보 수정할 수 있는 정보들의 접근 권한 (홈페이지 회원가입 필요 -&amp;gt; 회원가입 필요 없이 견주 정보로 접근하여 수정할 수 있도록) 대행업체가 구청에 등록신청을 하지 않아도 되도록. (대행업체를 적어서) TODO DB 변경 hospital_tb 기존 user_tb 계좌번호 + 은행명 pet_info_tb 반려동물 key - 일련번호 (only 내장형) 반려동물 정보 주인 key (primary) 대행업체 key (primary) user_tb(사용자 새로 만들 것) 사용자 key 사용자 계정 정보 (카카오 계정) - 토큰 닉네임 후기_tb 후기 index 병원 key 사용자 key 내용 작성일 커뮤니티 분류 Q&amp;amp;A trade pet_find pet_sale 상품_tb (추후) 상품 index 상품 이미지 설명 가격 서버 변경 url 수정 -&amp;gt; 수정사항 알려주기 라우터 적용 메일보내기 form 만들어서 기능 예약 제거 후기 작성, 수정, 제거 커뮤니티 수정 제거 사용자 회원 탈퇴 병원 회원 탈퇴 반려동물 정보 추가(예약완료 될 때) 관리자 페이지 대충 TODO TODAY 라우터 적용 node에서 메일 사용하기</summary></entry><entry><title type="html">농림축산식품 공공 및 빅데이터 활용 창업경진대회 중간 발표 결과</title><link href="http://localhost:4000/2019/08/08/startup-PT.html" rel="alternate" type="text/html" title="농림축산식품 공공 및 빅데이터 활용 창업경진대회 중간 발표 결과" /><published>2019-08-08T00:00:00+09:00</published><updated>2019-08-08T00:00:00+09:00</updated><id>http://localhost:4000/2019/08/08/startup-PT</id><content type="html" xml:base="http://localhost:4000/2019/08/08/startup-PT.html">&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;상표출원&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;수익성 : 타겟이 누구냐. 매출 계획 구체적으로. 서비스랑 묶어서.&lt;/p&gt;
-
-&lt;p&gt;사업에 대한 고민한 흔적이 보이도록.&lt;/p&gt;
-
-&lt;p&gt;이미 한 것. 앞으로 할 것. 짧 굵.&lt;/p&gt;
-
-&lt;p&gt;공공데이터 활용한 구체적인 예시.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;petstagram&quot;&gt;petstagram&lt;/h3&gt;
-
-&lt;p&gt;반려동물 공감문화 확산 -&amp;gt; 사료가 가장 많이 유통됨.&lt;/p&gt;
-
-&lt;p&gt;가장 중요한 시간 골든타임. 분실되는 개체 수 줄이기 위한 커뮤니티&lt;/p&gt;
-
-&lt;p&gt;컬러필 어플 협력&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;커뮤니티&lt;/li&gt;
-  &lt;li&gt;실시간 알림 서비스 (지역기반 가까운 곳부터)&lt;/li&gt;
-  &lt;li&gt;공공데이터 활용하여. 신고자에게 알림 (매칭) 추후 이미지 딥러닝&lt;/li&gt;
-  &lt;li&gt;자신의 반려동물과 닮은 유기동물을 매칭하여 입양 확대 (CSV)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;검색같은 수동 -&amp;gt; 실시간 알림서비스, 매칭서비스로 보다 능동적인 방식&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;중고나라 vs 당근마켓&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;유기동물 입양 활성화. 맹견에 대한 관리 강화. 유기동물 입양할 경우 지원 확대. 이용해서 유기동물 &lt;strong&gt;입양 확대&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; 펫 커뮤니티 확산 + 유통, 광고로 수익&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;vowow&quot;&gt;VOWOW&lt;/h3&gt;
-
-&lt;p&gt;대행업체가 병원에만 국한되지 않으므로 이에 대한 설명을 앞에 정의 필요&lt;/p&gt;
-
-&lt;p&gt;법적으로 문제가 없는지.&lt;/p&gt;
-
-&lt;p&gt;수익 창출 정확하게. 타겟 명확하게. 사회공헌으로 갔을 때 서비스 지속 가능 ?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;등록 이후의 서비스 부족.&lt;/strong&gt; -&amp;gt; 분실. 가출. 했을 경우 ?!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;등록하려고 어플 설치하지는 않을 거 아니냐 ?&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="농림축산식품부" /><category term="농정원" /><category term="창업경진대회" /><category term="빅데이터" /><category term="공공데이터" /><summary type="html">TODO 상표출원 수익성 : 타겟이 누구냐. 매출 계획 구체적으로. 서비스랑 묶어서. 사업에 대한 고민한 흔적이 보이도록. 이미 한 것. 앞으로 할 것. 짧 굵. 공공데이터 활용한 구체적인 예시. petstagram 반려동물 공감문화 확산 -&amp;gt; 사료가 가장 많이 유통됨. 가장 중요한 시간 골든타임. 분실되는 개체 수 줄이기 위한 커뮤니티 컬러필 어플 협력 커뮤니티 실시간 알림 서비스 (지역기반 가까운 곳부터) 공공데이터 활용하여. 신고자에게 알림 (매칭) 추후 이미지 딥러닝 자신의 반려동물과 닮은 유기동물을 매칭하여 입양 확대 (CSV) 검색같은 수동 -&amp;gt; 실시간 알림서비스, 매칭서비스로 보다 능동적인 방식 중고나라 vs 당근마켓 유기동물 입양 활성화. 맹견에 대한 관리 강화. 유기동물 입양할 경우 지원 확대. 이용해서 유기동물 입양 확대. -&amp;gt; 펫 커뮤니티 확산 + 유통, 광고로 수익 VOWOW 대행업체가 병원에만 국한되지 않으므로 이에 대한 설명을 앞에 정의 필요 법적으로 문제가 없는지. 수익 창출 정확하게. 타겟 명확하게. 사회공헌으로 갔을 때 서비스 지속 가능 ? 등록 이후의 서비스 부족. -&amp;gt; 분실. 가출. 했을 경우 ?! 등록하려고 어플 설치하지는 않을 거 아니냐 ?</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="vi" /><category term="vim" /><category term="vi_cheet" /><category term="vim_cheet" /><category term="cheet" /><summary type="html">Vim Cheat Sheet 전역 :help keyword - keyword에 대한 도움말 열기 :saveas file - file로 저장하기 :close - 현재 영역 닫기 K - 커서가 위치한 단어에 대한 맨페이지 열기 커서 이동 h - 왼쪽으로 이동 j - 아래로 이동 k - 위로 이동 l - 오른쪽으로 이동 H - 화면 상단으로 이동 M - 화면 중간으로 이동 L - 화면 하단으로 이동 w - 다음 단어 시작으로 점프 W - 다음 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) e - 다음 단어 끝으로 점프 E - 다음 단어 끝으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) b - 이전 단어 시작으로 점프 B - 이전 단어 시작으로 점프 (단어 옆에 붙은 연속된 문장부호도 하나의 단어로 본다) % - 현재 괄호와 맞는 짝의 괄호로 이동 (:h matchpairs를 통해 더 많은 정보를 얻을 수 있다.) 0 - 행의 처음으로 점프 ^ - 행의 시작 문자로 점프 $ - 행의 끝으로 점프 g_ - 행의 끝 문자로 점프 gg - 문서 첫 행으로 점프 G - 문서 마지막 행으로 점프 5G - 5번째 행으로 점프 fx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x로 이동 tx - 커서 위치 기준 오른쪽에서 가장 가까운 문자 x의 한 칸 뒤(왼쪽)으로 이동 Fx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x로 이동 Tx - 커서 위치 기준 왼쪽에서 가장 가까운 문자 x의 한 칸 앞(오른쪽)으로 이동 ; - 가장 최근의 f, t, F나 T 명령을 다시 실행 , - 가장 최근의 f, t, F나 T 명령을 반대 방향으로 다시 실행 } - 다음 단락(또는 함수/블록)으로 이동 { - 이전 단락(또는 함수/블록)으로 이동 zz - 커서가 있는 행을 중간으로 하도록 화면 이동 Ctrl + e - 커서 이동 없이 한 줄 아래로 화면 이동 Ctrl + y - 커서 이동 없이 한 줄 위로 화면 이동 Ctrl + b - 한 화면 위로 Ctrl + f - 한 화면 아래로 Ctrl + d - 반 화면 아래로 Ctrl + u - 반 화면 위로 Tip 커서 이동 명령 앞에 숫자를 붙이면 그 수만큼 반복. 예를 들어 4j 는 4행 아래로 이동. 삽입 모드 - 택스트 삽입/추가 i - 커서 앞에 삽입 I - 행 시작에 삽입 a - 커서 뒤에 추가 A - 행 끝에 추가 o - 현재 행 아래에 새 행 추가 O - 현재 행 위에 새 행 추가 ea - 단어 끝에 추가 Esc - 삽입 모드 종료 편집 r - 한 글자 바꾸기 J - 현재 행과 다음 행을 연결 gJ - 현재 행과 다음 행을 둘 사이에 공백 없이 연결 gwip - 단락을 리플로우 cc - 행 전체를 새로 쓰기 C - 행 끝까지를 새로 쓰기 c$ - 행 끝까지를 새로 쓰기 ciw - 단어 전체를 새로 쓰기 cw - 단어 끝까지를 새로 쓰기 s - 한 글자 삭제하고 삽입 모드 시작 S - 행 삭제하고 텍스트 입력 (cc와 동일) xp - 두 문자 위치 바꾸기 (잘라내기 붙여넣기 조합) u - 실행 취소 Ctrl + r - 다시 실행 . - 마지막 명령 반복 텍스트 선택 (비주얼 모드) v - 선택 모드 시작. 텍스트 선택해서 명령 수행 (가령 y로 복사) V - 행 단위 선택 모드 시작 o - 선택 영역의 반대쪽 끝으로 이동 Ctrl + v - 블록 선택 모드 시작 O - 블록의 반대쪽 모서리로 이동 aw - 단어 선택 ab - () 블럭 선택 aB - {} 블럭 선택 ib - () 블럭의 내부 선택 iB - {} 블럭의 내부 선택 Esc - 선택 모드 종료 선택 모드 명령 &amp;gt; - 텍스트를 오른쪽으로 이동 &amp;lt; - 텍스트를 왼쪽으로 이동 y - 선택한 텍스트 복사 d - 선택한 텍스트 삭제 ~ - 대소문자 반전 레지스터 :reg - 레지스터 내용물 표시 “xy - 레지스터 x로 복사 “xp - 레지스터 x의 내용물 붙어넣기 Tip 레지스터들은 ./viminfo에 저장되며 다음번 vim 재시작 때 다시 읽어들임. Tip 0번 레지스터에는 항상 최근 복사 명령의 값이 들어있음. 표시 :marks - 표시 항목 표시 ma - 현재 위치를 표시 a로 설정 `a - 표시 a의 위치로 점프 y`a - 표시 a의 위치까지 복사 매크로 qa - 매크로 a 기록 시작 q - 매크로 기록 중지 @a - 매크로 a 실행 @@ - 마지막 실행한 매크로 재실행 잘라내기와 붙여넣기 yy - 행 복사 2yy - 2줄 복사 yw - 커서 위치에서 다음 단어 시작까지 복사 y$ - 행 끝까지 복사 p - 커서 위치 뒤에 붙여넣기 P - 커서 위치 앞에 붙여넣기 dd - 행 잘라내기 2dd - 2줄 잘라내기 dw - 커서 위치에서 다음 단어 시작까지 잘라내기 D - 행 끝까지 잘라내기 d$ - 행 끝까지 잘라내기 x - 한 글자 잘라내기 나가기 :w - 저장하고, 나가지는 않기 :w !sudo tee % - sudo로 현재 파일 저장 :wq or :x or ZZ - 저장하고 나가기 :q - 나가기 (저장하지 않은 변경 사항 있으면 실패) :q! or ZQ - 나가기 (저장하지 않은 변경 사항 버림) :wqa - 열어 놓았던 모든 탭을 다 저장하고 나가기 찾기와 바꾸기 /pattern - 패턴 찾기 ?pattern - 패턴 역방향 찾기 \vpattern - ‘마법’ 패턴: 영문/숫자가 아닌 문자는 정규표현식 심볼로 해석 (이스케이프 불필요) n - 같은 방향으로 찾기 반복 N - 반대 방향으로 찾기 반복 :%s/old/new/g - 파일 내 모든 old를 new로 바꾸기 :%s/old/new/gc - 파일 내 모든 old를 new로 확인하며 바꾸기 :noh - 찾기 강조 표시 없애기 여러 파일에서 찾기 :vimgrep /pattern/ {file} - 여러 파일에서 패턴 찾기 e.g.:vimgrep /foo/ */ :cn - 다음 일치 항목으로 점프 :cp - 이전 일치 항목으로 점프 :copen - 일치 목록을 새 창으로 열기 여러 파일 작업 :e file - 새 버퍼에서 파일 편집 :bnext or :bn - 다음 버퍼로 이동 :bprev or :bp - 이전 버퍼로 이동 :bd - 버퍼 삭제 (파일 닫기) :ls - 열린 버퍼 모두 나열 :sp file - 새 버퍼에 파일 열고 상하로 창 분할 :vsp file - 새 버퍼에 파일 열고 좌우로 창 분할 Ctrl + ws - 상하로 창 분할 Ctrl + ww - 창 전환 Ctrl + wq - 창 닫기 Ctrl + wv - 좌우로 창 분할 Ctrl + wh - 오른쪽 창으로 이동 (좌우 분할) Ctrl + wl - 왼쪽 창으로 이동 (좌우 분할) Ctrl + wj - 아래 창으로 이동 (상하 분할) Ctrl + wk - 위 창으로 이동 (상하 분할) 탭 :tabnew or :tabnew file - 새 탭에서 파일 열기 Ctrl + wT - 현재 분할 창을 새로운 탭으로 이동 gt or :tabnext or :tabn - 다음 탭으로 이동 gT or :tabprev or :tabp - 이전 탭으로 이동 #gt - #번 탭으로 이동 :tabmove # - 현재 탭을 #번째로 이동 (0부터 시작) :tabclose or :tabc - 현재 탭과 그 안의 창들 닫기 :tabonly or :tabo - 현재 탭 이외의 모든 탭 닫기 :tabdo command - 모든 탭에서 command 실행하기 (예를 들어, :tabdo q - 열린 모든 탭 닫기)</summary></entry><entry><title type="html">codepen timetable</title><link href="http://localhost:4000/2020/02/24/codepen-timetable.html" rel="alternate" type="text/html" title="codepen timetable" /><published>2020-02-24T00:00:00+09:00</published><updated>2020-02-24T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/24/codepen-timetable</id><content type="html" xml:base="http://localhost:4000/2020/02/24/codepen-timetable.html">&lt;div&gt;&lt;div class=&quot;extensions extensions--demo&quot;&gt;
+&lt;iframe src=&quot;//codepen.io/markmurray/embed/wImHf/?theme-id=0&amp;amp;default-tab=html,result&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Jiwon Jeong</name><email>poiu8944@gmail.com</email></author><category term="시간표" /><category term="타임테이블" /><category term="timetable" /><summary type="html"></summary></entry></feed>
