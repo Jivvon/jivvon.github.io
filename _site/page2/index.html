@@ -287,6 +287,63 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>홈</h1></header><meta itemprop="headline" content="홈"><meta itemprop="author" content="Jiwon Jeong"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/02/26/react-study-2.html"><h2 itemprop="headline" class="item__header">React 2</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 2
+
+
+  prop-types 를 이용하여 props의 데이터 유효성을 검증할 수 있다.
+
+
+npm i prop-types
+
+Animal.propTypes = {
+    type: PropTypes.string.isRequired,
+    legs: PropTypes.number.isRequired
+}
+
+
+자세한 것은 prop-types에서 알아보자.
+
+class component
+
+function Animal({ type, legs }){
+    console.log(type) // dog
+    console.log(legs) // 4
+    return &lt;div&gt;type is {ty...</div><p><a href="/2020/02/26/react-study-2.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=study">study</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 26일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-26T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,study"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/02/25/react-study-1.html"><h2 itemprop="headline" class="item__header">React 1</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 1
+
+react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.
+
+모든 요소는 component이다.
+and component는 반드시 대분자로 시작해야 한다 !
+
+react는 component를 가져와서 브라우저가 이해할 수 있는 형태의 html 코드로 만든다.
+
+react application은 한번에  하나의 component만 rendering할 수 있다.
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
+
+
+처럼 하나만...</div><p><a href="/2020/02/25/react-study-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=study">study</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 25일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-25T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,study"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/02/24/vim-cheet.html"><h2 itemprop="headline" class="item__header">vi 단축키</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">Vim Cheat Sheet
 
@@ -441,7 +498,7 @@ petstagram
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2019-08-08T00:00:00+09:00">
     <meta itemprop="keywords" content="농림축산식품부,농정원,창업경진대회,빅데이터,공공데이터"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>전체 글 12개, 2 페이지</p>
+</div><div class="layout--home"><div class="pagination"><p>전체 글 14개, 2 페이지</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><a class="button button--secondary button--circle" href="/">
             <i class="fas fa-angle-left"></i>

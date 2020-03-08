@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>React Hooks 리액트 훅 - Jivvlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>안 쓸 것 다 쓰는 todo-list - Jivvlog</title>
 
-<meta name="description" content="React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !)useStateconst App = () =&gt; {  const [count, setCount] = useState(0); // 배열 [value, va...">
-<link rel="canonical" href="http://localhost:4000/2020/02/28/react-hook.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="요즘 공부하는 ‘리액트’를 이용하여 todo-list를 만들어 볼게요 !skills  react  redux  react-router  bootstrap4  typescript고작 todo-list 만드는데 뭐 이렇게 거창하게 하냐구요 ?거창하게 한번 해보고 싶기는 한데 거창하게 ...">
+<link rel="canonical" href="http://localhost:4000/2020/03/07/todolist-1.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -286,124 +286,74 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>React Hooks 리액트 훅</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>안 쓸 것 다 쓰는 todo-list</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Github에서 확인하기"
-            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-02-28-react-hook.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="React Hooks 리액트 훅"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-03-07-todolist-1.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="안 쓸 것 다 쓰는 todo-list"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=react">react</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=study">study</a>
+                href="/archive.html?tag=redux">redux</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=hooks">hooks</a>
+                href="/archive.html?tag=bootstrap4">bootstrap4</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=react-hooks">react-hooks</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 28일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-28T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study,hooks,react-hooks"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+                href="/archive.html?tag=typescript">typescript</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 07일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-07T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,redux,bootstrap4,typescript"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>React Hook 리액트 훅을 사용하면 함수형 컴포넌트로도 state를 다룰 수 있다. (클래스 컴포넌트보다 더 편하게 !)</p>
+<div class="article__content" itemprop="articleBody"><p>요즘 공부하는 ‘리액트’를 이용하여 todo-list를 만들어 볼게요 !</p>
 
-<h3 id="usestate">useState</h3>
+<h3 id="skills">skills</h3>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// 배열 [value, value를 변경하는 함수] 를 반환</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">email</span><span class="p">,</span> <span class="nx">setEmail</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">""</span><span class="p">);</span>
-  <span class="kd">const</span> <span class="nx">updateEmail</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="p">{</span>
-      <span class="na">target</span><span class="p">:</span> <span class="p">{</span> <span class="nx">value</span> <span class="p">}</span>
-    <span class="p">}</span> <span class="o">=</span> <span class="nx">e</span><span class="p">;</span>
-    <span class="nx">setEmail</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
-  <span class="p">};</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;&gt;</span>
-      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">count</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">email</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Increment</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
-</span>      <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">placeholder</span><span class="o">=</span><span class="dl">"</span><span class="s2">Email</span><span class="dl">"</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">email</span><span class="p">}</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">updateEmail</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
-</span>    <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
-</span>  <span class="p">);</span>
-<span class="p">};</span>
-</code></pre></div></div>
-<p><strong>useState는 배열 [value, value를 변경하는 함수] 를 반환한다.</strong></p>
-
-<h3 id="useeffect">useEffect</h3>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">useEffect</span><span class="p">(</span><span class="nx">func</span><span class="p">,</span> <span class="p">[</span><span class="nx">dependency</span><span class="p">])</span>
-</code></pre></div></div>
-
-<p><strong>useEffect는 dependency가 바뀔 때마다 func을 호출한다</strong></p>
-
-<h3 id="useref">useRef</h3>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">inputTag</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">()</span>
-<span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">inputTag</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">focus</span><span class="p">(),</span> <span class="mi">5000</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="nx">input</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">inputTag</span><span class="p">}</span> <span class="nx">placeholder</span><span class="o">=</span><span class="dl">"</span><span class="s2">Type here...</span><span class="dl">"</span> <span class="o">/&gt;</span>
-</code></pre></div></div>
-
-<p><strong>모든 react component는 reference 속성을 가지고 있다. useRef는 해당 element를 사용할 수 있게 해준다. (getElementById 처럼 !)</strong></p>
-
-<hr />
-
-<h3 id="note">Note</h3>
-
-<p>input 태그 안의 value={name.value} onChange={name.onChange}는 {…name}과 같은 의미이다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">name</span><span class="p">.</span><span class="nx">value</span><span class="p">}</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">name</span><span class="p">.</span><span class="nx">onChange</span><span class="p">}</span> <span class="nx">placeholder</span><span class="o">=</span><span class="dl">"</span><span class="s2">Type here</span><span class="dl">"</span> <span class="o">/&gt;&gt;</span>
-</code></pre></div></div>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">input</span> <span class="p">{...</span><span class="nx">name</span><span class="p">}</span> <span class="nx">placeholder</span><span class="o">=</span><span class="dl">"</span><span class="s2">Type here</span><span class="dl">"</span> <span class="o">/&gt;&gt;</span>
-</code></pre></div></div>
-
-<p>다음과 같이 쓸 수 있다 (in JSX only)</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">flag</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="p">{</span><span class="nx">flag</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="nx">span</span><span class="o">&gt;</span><span class="k">this</span> <span class="nx">is</span> <span class="kc">true</span><span class="o">&lt;</span><span class="sr">/span&gt;</span><span class="err">}
-</span><span class="p">{</span><span class="o">!</span><span class="nx">flag</span> <span class="o">&amp;&amp;</span> <span class="o">&lt;</span><span class="nx">span</span><span class="o">&gt;</span><span class="k">this</span> <span class="nx">is</span> <span class="kc">false</span><span class="o">&lt;</span><span class="sr">/span&gt;</span><span class="err">}
-</span></code></pre></div></div>
-
-<p><strong>modal (popup) 만들기</strong></p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">clickOutside</span><span class="p">(</span><span class="nx">f</span><span class="p">){</span>
-    <span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="nx">createRef</span><span class="p">();</span>
-    <span class="kd">const</span> <span class="nx">handleClick</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">ref</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">)){</span>
-            <span class="nx">f</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="nx">useEffect</span><span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
-        <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handleClick</span><span class="p">);</span>
-    <span class="p">},</span> <span class="p">[])</span> <span class="c1">// componentDidMount 후 rerender 안 함</span>
-    <span class="k">return</span> <span class="nx">ref</span><span class="p">;</span>
-<span class="p">}</span>
-
-
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">testFunction</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">test</span><span class="dl">"</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="kd">const</span> <span class="nx">ref</span> <span class="o">=</span> <span class="nx">clickOutside</span><span class="p">(</span><span class="nx">testFunction</span><span class="p">);</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">ref</span><span class="p">}</span><span class="o">&gt;</span>
-                <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">popup</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
-</span>            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span>    <span class="p">)</span>
-<span class="p">}</span>
-
-</code></pre></div></div>
-
-<hr />
-
-<h3 id="참고">참고</h3>
 <ul>
-  <li><a href="https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ">노마드 코더 youtube</a></li>
+  <li>react</li>
+  <li>redux</li>
+  <li>react-router</li>
+  <li>bootstrap4</li>
+  <li>typescript</li>
 </ul>
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-02-28T00:00:00+09:00"><!-- start custom article footer snippet -->
+
+<p>고작 todo-list 만드는데 뭐 이렇게 거창하게 하냐구요 ?</p>
+
+<p>거창하게 한번 해보고 싶기는 한데 거창하게 시작하면 끝을 못 볼 것 같거든요 … !</p>
+
+<p>사실 router는 어디에 써야하지 고민하다가 home을 만들기로 했답니다 !</p>
+
+<h3 id="타입스크립트-기반의-리액트-앱-생성">타입스크립트 기반의 리액트 앱 생성</h3>
+<p>create-react-app 을 사용하면 굉장히 쉽게 리액트 어플리케이션을 만들 수 있답니다.</p>
+
+<p>우리는 타입스크립트를 이용할 것이기 때문에 뒤에 <code class="highlighter-rouge">--typescript</code> 옵션을 붙여줄게요</p>
+
+<p>이미 만들어진 프로젝트에 타입스크립트를 추가하고 싶다면 <a href="https://create-react-app.dev/docs/adding-typescript">링크</a>를 따라하시면 됩니다 !</p>
+
+<p><code class="highlighter-rouge">$ npx create-react-app todo-list --typescript</code></p>
+
+<p>src/App.tsx 파일을 확인해보세요 ! 확장자를 보면 타입스크립트를 사용하는 리액트 컴포넌트인 것을 알 수 있죠 ?</p>
+
+<p><code class="highlighter-rouge">$ npm install redux react-redux @types/react-redux</code></p>
+
+<p>redux도 설치하구요.</p>
+
+<p>react-redux는 타입스크립트를 지원하지 않기 때문에 앞에 @types를 붙여줘야 해요.</p>
+
+<p><code class="highlighter-rouge">$ npm install react-router-dom</code></p>
+
+<p>react router도 설치해줍니다.</p>
+
+<p><code class="highlighter-rouge">$ npm install bootstrap</code></p>
+
+<p>bootstrap도 설치해주고 src/index.tsx에서 import 해줍니다.</p>
+
+<p><code class="highlighter-rouge">import "bootstrap/dist/css/bootstrap.css"</code></p>
+
+<hr />
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-03-07T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">구독하기</a></div>
@@ -414,7 +364,7 @@
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/27/react-study-life-cycle.html">React life cycle 라이프사이클</a></div><div class="next"><span>다음</span><a href="/2020/02/28/react-study-3.html">React 3</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/03/07/react-cheetsheet.html">react 메모장</a></div></div></div>
 
 </div>
 

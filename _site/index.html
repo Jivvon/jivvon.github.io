@@ -287,7 +287,64 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>홈</h1></header><meta itemprop="headline" content="홈"><meta itemprop="author" content="Jiwon Jeong"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/03/05/Redux-redux-1.html"><h2 itemprop="headline" class="item__header">Redux 정리</h2></a></header>
+          <header><a href="/2020/03/07/todolist-1.html"><h2 itemprop="headline" class="item__header">안 쓸 것 다 쓰는 todo-list</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">요즘 공부하는 ‘리액트’를 이용하여 todo-list를 만들어 볼게요 !
+
+skills
+
+
+  react
+  redux
+  react-router
+  bootstrap4
+  typescript
+
+
+고작 todo-list 만드는데 뭐 이렇게 거창하게 하냐구요 ?
+
+거창하게 한번 해보고 싶기는 한데 거창하게 시작하면 끝을 못 볼 것 같거든요 … !
+
+사실 router는 어디에 써야하지 고민하다가 home을 만들기로 했답니다 !
+
+타입스크립트 기반의 리액트 앱 생성
+create-react-app 을 사용하면 굉장히 쉽게 리액트 어플리케이션을 만들 수 있답니다.
+
+우리는 타입스크립트를 이용할 것이기 때문에 뒤에 --typ...</div><p><a href="/2020/03/07/todolist-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=redux">redux</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=bootstrap4">bootstrap4</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=typescript">typescript</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 07일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-07T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,redux,bootstrap4,typescript"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/03/07/react-cheetsheet.html"><h2 itemprop="headline" class="item__header">react 메모장</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">루트 리듀서에 등록하기 : src/modules/index.ts
+투두리스트 컴포넌트 준비하기
+  필요한 컴포넌트 미리 정하기 - 각 컴포넌트는 하나의 동작만 하도록.
+
+modules/
+  action
+    1. 액션의 타입을 정하고 // vue.js의 mutation-type
+    2. 액션 생성 함수를 선언한다. - { createStandardAction } from ‘typesafe-actions’ 이용
+  types
+    1. action에서 정한 액션 타입을 하나로 묶어 타입을 정의한다. - export type TodosAction = ActionType;
+    2. 데이터 타입 정의한다.
+  r...</div><p><a href="/2020/03/07/react-cheetsheet.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 07일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-07T00:00:00+09:00">
+    <meta itemprop="keywords" content="react"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/03/05/redux-1.html"><h2 itemprop="headline" class="item__header">Redux 정리</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">액션 (Action)
 
 액션 객체는 반드시 type 필드를 가져야 한다.
@@ -312,7 +369,7 @@ dispatch
 
 subscribe
 
-함수 ...</div><p><a href="/2020/03/05/Redux-redux-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+함수 ...</div><p><a href="/2020/03/05/redux-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=react">react</a>
             </li><li>
@@ -324,6 +381,34 @@ subscribe
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 05일</span>
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-05T00:00:00+09:00">
     <meta itemprop="keywords" content="react,redux,상태관리"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/03/04/whatis-babel.html"><h2 itemprop="headline" class="item__header">React babel 알아보기</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.
+
+babel-polyfill
+
+babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.
+
+.babelrc
+
+.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 re...</div><p><a href="/2020/03/04/whatis-babel.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=react">react</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=study">study</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=babel">babel</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es6">es6</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=es7">es7</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
+    <meta itemprop="keywords" content="react,study,babel,es6,es7"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/03/04/npm-install-options.html"><h2 itemprop="headline" class="item__header">--save 와 --save-dev</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">–save
@@ -353,34 +438,6 @@ subscribe
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
     <meta itemprop="keywords" content="npm,npm-install,dependencies,devDependencies"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/03/04/React-whatis-babel.html"><h2 itemprop="headline" class="item__header">React babel 알아보기</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.
-
-babel-polyfill
-
-babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.
-
-.babelrc
-
-.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 re...</div><p><a href="/2020/03/04/React-whatis-babel.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=react">react</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=study">study</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=babel">babel</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=es6">es6</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=es7">es7</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study,babel,es6,es7"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/02/28/react-study-3.html"><h2 itemprop="headline" class="item__header">React 3</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 3
 
@@ -391,6 +448,8 @@ babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. 
 npm i react-router-dom
 
 자세한 것은 react-router-dom에서 알아보자.
+
+
 
 참고
 
@@ -476,65 +535,8 @@ componentWillUnmount : ...</div><p><a href="/2020/02/27/react-study-life-cycle.h
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 27일</span>
             </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-27T00:00:00+09:00">
     <meta itemprop="keywords" content="React,study,life-cycle,lifecycle,라이프사이클"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/26/react-study-2.html"><h2 itemprop="headline" class="item__header">React 2</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 2
-
-
-  prop-types 를 이용하여 props의 데이터 유효성을 검증할 수 있다.
-
-
-npm i prop-types
-
-Animal.propTypes = {
-    type: PropTypes.string.isRequired,
-    legs: PropTypes.number.isRequired
-}
-
-
-자세한 것은 prop-types에서 알아보자.
-
-class component
-
-function Animal({ type, legs }){
-    console.log(type) // dog
-    console.log(legs) // 4
-    return &lt;div&gt;type is {ty...</div><p><a href="/2020/02/26/react-study-2.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=react">react</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=study">study</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 26일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-26T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/25/react-study-1.html"><h2 itemprop="headline" class="item__header">React 1</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">기본 react 1
-
-react는 빈 html 파일을 읽은 후 JSX(html + javascript) 를 렌더링하여 표출한다. 즉, 처음 불러오는 파일은 가볍기 때문에 속도가 빠르다.
-
-모든 요소는 component이다.
-and component는 반드시 대분자로 시작해야 한다 !
-
-react는 component를 가져와서 브라우저가 이해할 수 있는 형태의 html 코드로 만든다.
-
-react application은 한번에  하나의 component만 rendering할 수 있다.
-
-ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
-
-
-처럼 하나만...</div><p><a href="/2020/02/25/react-study-1.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=react">react</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=study">study</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 02월 25일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-02-25T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>전체 글 12개, 2 페이지</p>
+</div><div class="layout--home"><div class="pagination"><p>전체 글 14개, 2 페이지</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
             <i class="fas fa-angle-left"></i>

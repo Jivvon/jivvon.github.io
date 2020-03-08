@@ -50,7 +50,7 @@ function Animal({ type, legs }){
 
 **component의 key는 unique해야 한다. -> parameter로 넘겨주지 않아도 component를 사용할 때 key 속성을 주자.**
 
-
+---
 
 ### 참고
 - [노마드 코더 youtube](https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ)

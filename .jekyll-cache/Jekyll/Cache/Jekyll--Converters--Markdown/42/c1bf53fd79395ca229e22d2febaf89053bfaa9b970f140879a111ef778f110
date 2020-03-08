@@ -1,0 +1,31 @@
+I"[<p>요즘 공부하는 ‘리액트’를 이용하여 todo-list를 만들어 볼게요 !</p>
+
+<h3 id="skills">skills</h3>
+
+<ul>
+  <li>react</li>
+  <li>redux</li>
+  <li>react-router</li>
+  <li>bootstrap4</li>
+  <li>typescript</li>
+</ul>
+
+<p>고작 todo-list 만드는데 뭐 이렇게 거창하게 하냐구요 ?</p>
+
+<p>거창하게 한번 해보고 싶기는 한데 거창하게 시작하면 끝을 못 볼 것 같거든요 … !</p>
+
+<p>사실 router는 어디에 써야하지 고민하다가 home을 만들기로 했답니다 !</p>
+
+<h3 id="타입스크립트-기반의-리액트-앱-생성">타입스크립트 기반의 리액트 앱 생성</h3>
+<p>create-react-app 을 사용하면 굉장히 쉽게 리액트 어플리케이션을 만들 수 있답니다.</p>
+
+<p>우리는 타입스크립트를 이용할 것이기 때문에 뒤에 <code class="highlighter-rouge">--typescript</code> 옵션을 붙여줄게요</p>
+
+<p>이미 만들어진 프로젝트에 타입스크립트를 추가하고 싶다면 <a href="https://create-react-app.dev/docs/adding-typescript">링크</a>를 따라하시면 됩니다 !</p>
+
+<p><code class="highlighter-rouge">$ npx create-react-app todo-list --typescript</code></p>
+
+<p>src/App.tsx 파일을 확인해보세요 ! 확장자를 보면 타입스크립트를 사용하는 리액트 컴포넌트인 것을 알 수 있죠 ?</p>
+
+<hr />
+:ET

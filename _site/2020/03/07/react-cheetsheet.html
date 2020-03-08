@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>React babel 알아보기 - Jivvlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>react 메모장 - Jivvlog</title>
 
-<meta name="description" content="babel은 컴파일러다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.babel-polyfillbabel-polyfill이 없다면 babel은 브라우저에서 실행되지 ...">
-<link rel="canonical" href="http://localhost:4000/2020/03/04/React-whatis-babel.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<meta name="description" content="루트 리듀서에 등록하기 : src/modules/index.ts투두리스트 컴포넌트 준비하기  필요한 컴포넌트 미리 정하기 - 각 컴포넌트는 하나의 동작만 하도록.modules/  action    1. 액션의 타입을 정하고 // vue.js의 mutation-type    2. 액...">
+<link rel="canonical" href="http://localhost:4000/2020/03/07/react-cheetsheet.html"><link rel="alternate" type="application/rss+xml" title="Jivvlog" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -286,44 +286,34 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>React babel 알아보기</h1></header><span class="split-space">&nbsp;</span>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>react 메모장</h1></header><span class="split-space">&nbsp;</span>
           <a class="edit-on-github"
             title="Github에서 확인하기"
-            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-03-04-[React] whatis-babel.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="React babel 알아보기"><div class="article__info clearfix"><ul class="left-col menu"><li>
+            href="https://github.com/Jivvon/jivvon.github.io/tree/master/_posts/2020-03-07-react-cheetsheet.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="react 메모장"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=react">react</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=study">study</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=babel">babel</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=es6">es6</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=es7">es7</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 04일</span>
-            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-04T00:00:00+09:00">
-    <meta itemprop="keywords" content="react,study,babel,es6,es7"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020년 03월 07일</span>
+            </li></ul></div><meta itemprop="author" content="Jiwon Jeong"/><meta itemprop="datePublished" content="2020-03-07T00:00:00+09:00">
+    <meta itemprop="keywords" content="react"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>babel은 <strong>컴파일러</strong>다. ES6(ECMAScript 2015), ES7와 같은 최신 문법이 호환되지 않는 브라우저가 있기 때문에 브라우저가 이를 이해할 수 있도록 컴파일 해주는 도구이다.</p>
+<div class="article__content" itemprop="articleBody"><p>루트 리듀서에 등록하기 : src/modules/index.ts
+투두리스트 컴포넌트 준비하기
+  필요한 컴포넌트 미리 정하기 - 각 컴포넌트는 하나의 동작만 하도록.</p>
 
-<h3 id="babel-polyfill">babel-polyfill</h3>
+<p>modules/
+  action
+    1. 액션의 타입을 정하고 // vue.js의 mutation-type
+    2. 액션 생성 함수를 선언한다. - { createStandardAction } from ‘typesafe-actions’ 이용
+  types
+    1. action에서 정한 액션 타입을 하나로 묶어 타입을 정의한다. - export type TodosAction = ActionType<typeof actions="">;
+    2. 데이터 타입 정의한다.
+  reducer
+    1. 초기값을 설정하고
+    2. action에서 정한 액션 타입별로 실행되는 리듀서를 선언한다. - { createReducer&lt;state, action&gt; } from 'typesafe-actions' 이용, vue.js의 mutation처럼 [ADD_TOTO]: (state, {payload: text}) =&gt;{...}</typeof></p>
 
-<p>babel-polyfill이 없다면 babel은 브라우저에서 실행되지 않는다. polyfill은 브라우저에 따라 호환되지 않는 문법을 사용한 객체에 prototype을 설정해준다.</p>
-
-<h3 id="babelrc">.babelrc</h3>
-
-<p>.babelrc는 프로젝트의 최상단에 위치해야 한다. plugins는 문법들이라 보면 되고, preset은 여러 개가 묶여있는 개념이다. 대표적으로 ES6 문법을 모아놓은 es2015 preset과 react 문법을 모아놓은 react preset이 있다.</p>
-
-<h3 id="babel-cli">babel-cli</h3>
-
-<p>babel을 직접 빌드할 때 사용하는 babel-cli. 보통은 webpack을 사용한다.</p>
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-03-04T00:00:00+09:00"><!-- start custom article footer snippet -->
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-03-07T00:00:00+09:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">구독하기</a></div>
@@ -334,7 +324,7 @@
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/02/28/react-study-3.html">React 3</a></div><div class="next"><span>다음</span><a href="/2020/03/04/npm-install-options.html">--save 와 --save-dev</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>이전</span><a href="/2020/03/05/redux-1.html">Redux 정리</a></div><div class="next"><span>다음</span><a href="/2020/03/07/todolist-1.html">안 쓸 것 다 쓰는 todo-list</a></div></div></div>
 
 </div>
 
