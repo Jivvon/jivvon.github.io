@@ -1,5 +1,5 @@
 ---
-title: [python] 파일명 한번에 바꾸기
+title: python 파일명 한번에 바꾸기
 tags: python
 ---
 
