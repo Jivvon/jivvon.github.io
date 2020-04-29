@@ -60,7 +60,7 @@ awk '{print $2}' : 검색된 줄에서 2번째 항목(PID) 출력<br />-KILL `ls
 $ lsof
 $ lsof -u jiwon
 $ lsof /var/log/httpd/access_log
-$ lsof -i TCP:22
+$ lsof -i [TCP]:22
 $ lsof -i 4
 $ lsof -t -u jiwon
 ```
@@ -97,11 +97,15 @@ $ find ./Girlgroup ! -name "Sistar" | xargs grep "Sexy"
 위의 내용은 [여기](https://kldp.org/node/155637)
 
 ```shell
+$ find / -name passwd > pw.dat   2>pw.err &
+```
+프로그램 > 실행결과 > 오류 메세지
+실행 결과와 오류 메세지의 출력 방향을 바꾼다.
+
+
+```shell
 $ find . -exec mycommand '{}' '+'
 ```
-
-
-
 
 
 
